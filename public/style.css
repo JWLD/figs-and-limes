@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%; }
+
+body, div {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-sizing: border-box; }
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+a:hover, button:hover {
+  cursor: pointer; }
+
+button:focus {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  background-color: transparent; }
