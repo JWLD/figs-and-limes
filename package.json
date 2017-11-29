@@ -1,0 +1,27 @@
+{
+  "name": "figs-and-limes",
+  "version": "1.0.0",
+  "description": "Wedding band agency website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "npm run sass & npm run sass:watch & nodemon src/server.js",
+    "sass": "./node_modules/.bin/node-sass public/sass/main.scss public/style.css",
+    "sass:watch": "./node_modules/.bin/node-sass --watch public/sass/main.scss public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JWLD/figs-and-limes.git"
+  },
+  "author": "Jack Davies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JWLD/figs-and-limes/issues"
+  },
+  "homepage": "https://github.com/JWLD/figs-and-limes#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "node-sass": "^4.7.2"
+  }
+}
