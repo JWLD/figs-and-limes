@@ -1,1 +1,68 @@
-<h1>HELLO WORLD</h1>
+<!-- LANDING -->
+<section class="sctn-landing">
+	<h1>Figs &amp; Limes</h1>
+	<nav class="nav-landing">
+		<button>About .</button>
+		<button>Bands .</button>
+		<button>Contact .</button>
+		<button>FAQ .</button>
+	</nav>
+</section>
+
+<!-- ABOUT -->
+<section class="sctn-about">
+	<div class="about-text">
+		<p>Figs and Limes aims to provide you with great live music at your event.</p>
+		<ul>
+			<li>We hand pick a selection of bands who we've seen consistently deliver excellent entertainment.</li>
+			<li>We respond personally to each enquiry and booking request.</li>
+			<li>We offer a better deal to our bands in order to attract the best.</li>
+		</ul>
+		<p>We're based in Bristol (because it's great) but our acts are available worldwide.</p>
+		<p>Why are we called Figs and Limes? Hand-picked bands like hand-picked fruit. And 'Prestige Worldwide' was already taken.</p>
+	</div>
+</section>
+
+<!-- BANDS -->
+<section class="sctn-bands">
+	<div>
+		{{#each bands}}
+			{{>bandTile}}
+		{{/each}}
+	</div>
+</section>
+
+<!-- FAQ -->
+<section class="sctn-faq">
+	<div class="faq-text">
+		<div>
+			<p>What's the general process for booking an act?</p>
+			<p>Browse through our website, pick the band for you and then send us an email with the event information! Easy.</p>
+		</div>
+		<div>
+			<p>Can I make a deposit to secure the act?</p>
+			<p>Yes, after we've confirmed the act's availability, a deposit will be needed to secure the act for your event.</p>
+		</div>
+		<div>
+			<p>Can I speak to the act before the event?</p>
+			<p>Yes, we'll arrange for one of the band members to give you a call around a month before your event, to say hello and confirm any details. It is possible to speak to the band before this call, just send us an email and we'll organise it.</p>
+		</div>
+		<div>
+			<p>Can I see the act perform before I book?</p>
+			<p>Some of the acts occasionally play public gigs / perform in public. When you enquire we'll let you know of any upcoming performances.</p>
+		</div>
+		<div>
+			<p>I'm planning an event abroad. Are your acts available outside of the UK?</p>
+			<p>Our acts are available worldwide. If you wish to book an act for an event abroad, we advise you contact us with as much notice as possible to ensure that travel, accommodation and other details can be arranged in good time.</p>
+		</div>
+		<div>
+			<p>I'm interested in booking one of your acts for a residency, is this possible?</p>
+			<p>Some of our acts are willing to do short term residencies in worldwide locations. As above, we recommend you contact us early to ensure your best chance of securing the act's availability.</p>
+		</div>
+	</div>
+</section>
+
+<!-- CONTACT -->
+<section class="sctn-contact">
+
+</section>

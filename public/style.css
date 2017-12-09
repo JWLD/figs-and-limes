@@ -1,17 +1,29 @@
+a, div, nav, section, span {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@font-face {
+  font-family: Simplifica;
+  src: url("../fonts/simplifica.ttf"); }
+
+@font-face {
+  font-family: Dense;
+  src: url("../fonts/dense.otf"); }
+
+@font-face {
+  font-family: Gidole;
+  src: url("../fonts/gidole.otf"); }
+
 html {
   font-size: 62.5%; }
 
-body, div {
+body, button, div, h1, nav, p, ul {
   border: 0;
   margin: 0;
   padding: 0;
   border-radius: 0;
   box-sizing: border-box; }
-
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 a:hover, button:hover {
   cursor: pointer; }
@@ -24,3 +36,74 @@ a {
 
 button {
   background-color: transparent; }
+
+section {
+  min-height: 100vh; }
+  section:nth-child(even) {
+    background-color: #eee; }
+
+.sctn-landing {
+  flex-direction: column;
+  font: 10rem Simplifica; }
+  .sctn-landing h1 {
+    position: relative;
+    font-size: 15rem; }
+
+.nav-landing {
+  margin-left: 35rem; }
+  .nav-landing button {
+    margin: 0 2rem;
+    padding: .6rem .7rem .1rem .9rem;
+    font: 3rem Simplifica;
+    text-transform: uppercase; }
+    .nav-landing button:hover {
+      background-color: #eee; }
+
+.about-text {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+  padding: 2rem;
+  border-radius: 3px;
+  font: 2rem Gidole;
+  background-color: white;
+  box-shadow: 0 5px 10px -5px black; }
+  .about-text ul {
+    width: 100%;
+    padding-left: 2rem; }
+  .about-text ul, .about-text p:not(:last-child) {
+    margin-bottom: 2rem; }
+
+.sctn-bands a {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  color: black;
+  background-color: #eee;
+  font: 2rem Gidole;
+  box-shadow: 0 5px 10px -5px black; }
+
+.faq-text {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+  padding: 2rem;
+  border-radius: 3px;
+  font: 2rem Gidole;
+  background-color: white;
+  box-shadow: 0 5px 10px -5px black; }
+  .faq-text div {
+    flex-direction: column;
+    align-items: flex-start; }
+    .faq-text div p {
+      margin-bottom: .5rem; }
+    .faq-text div p:first-of-type {
+      font-weight: bold; }
+
+.band-page {
+  flex-direction: column; }
+  .band-page div {
+    background-image: url("../pics/redWeb.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; }

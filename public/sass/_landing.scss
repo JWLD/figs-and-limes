@@ -1,0 +1,24 @@
+.sctn-landing {
+	flex-direction: column;
+	font: 10rem Simplifica;
+
+	h1 {
+		position: relative;
+		font-size: 15rem;
+	}
+}
+
+.nav-landing {
+	margin-left: 35rem;
+
+	button {
+		margin: 0 2rem;
+		padding: .6rem .7rem .1rem .9rem;
+		font: 3rem Simplifica;
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: #eee;
+		}
+	}
+}

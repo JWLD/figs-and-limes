@@ -6,6 +6,25 @@
   align-items: center;
 }
 
+a, div, nav, section, span {
+  @include flex();
+}
+
 // FONTS
+
+@font-face {
+	font-family: Simplifica;
+	src: url("../fonts/simplifica.ttf");
+}
+
+@font-face {
+	font-family: Dense;
+	src: url("../fonts/dense.otf");
+}
+
+@font-face {
+	font-family: Gidole;
+	src: url("../fonts/gidole.otf");
+}
 
 // COLOURS

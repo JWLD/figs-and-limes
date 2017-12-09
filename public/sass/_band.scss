@@ -1,0 +1,10 @@
+.band-page {
+	flex-direction: column;
+
+	div {
+		background-image: url('../pics/redWeb.jpg');
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+	}
+}
