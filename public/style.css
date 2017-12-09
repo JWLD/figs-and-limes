@@ -1,18 +1,30 @@
 @font-face {
   font-family: Simplifica;
-  src: url("../fonts/simplifica.ttf"); }
+  src: url("../fonts/Simplifica.ttf"); }
 
 @font-face {
   font-family: Dense;
-  src: url("../fonts/dense.otf"); }
+  src: url("../fonts/Dense.otf"); }
 
 @font-face {
   font-family: Gidole;
-  src: url("../fonts/gidole.otf"); }
+  src: url("../fonts/Gidole.otf"); }
 
 @font-face {
-  font-family: Din;
-  src: url("../fonts/dinCondensed.otf"); }
+  font-family: DinB;
+  src: url("../fonts/DinConB.otf"); }
+
+@font-face {
+  font-family: DinM;
+  src: url("../fonts/DinConM.otf"); }
+
+@font-face {
+  font-family: DinR;
+  src: url("../fonts/DinConR.otf"); }
+
+@font-face {
+  font-family: DinL;
+  src: url("../fonts/DinConL.otf"); }
 
 a, div, nav, section, span {
   display: flex;
@@ -82,17 +94,24 @@ section {
   padding: 3rem 4rem; }
   .landing-text h1 {
     position: relative;
-    font-size: 15rem;
-    color: white; }
+    color: white;
+    font: 15rem DinB;
+    text-transform: uppercase; }
+  .landing-text span {
+    align-self: flex-end;
+    margin-top: -2rem;
+    color: white;
+    font: 4rem DinB;
+    text-transform: uppercase; }
   .landing-text nav {
     margin-top: 3rem;
     width: 100%; }
     .landing-text nav a {
       flex-grow: 1;
       flex-basis: 0;
-      padding: 1rem .7rem .5rem .9rem;
+      padding: .8rem 0;
       border: 2px solid white;
-      font: 3rem Simplifica;
+      font: 3rem DinL;
       text-transform: uppercase;
       color: white; }
       .landing-text nav a:not(:last-child) {
