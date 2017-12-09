@@ -1,16 +1,18 @@
 <!-- LANDING -->
 <section class="sctn-landing">
-	<h1>Figs &amp; Limes</h1>
-	<nav class="nav-landing">
-		<button>About .</button>
-		<button>Bands .</button>
-		<button>Contact .</button>
-		<button>FAQ .</button>
-	</nav>
+	<div class="landing-text">
+		<h1>Figs &amp; Limes</h1>
+		<nav>
+			<a href="#about">About</a>
+			<a href="#bands">Bands</a>
+			<a href="#faq">FAQ</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</div>
 </section>
 
 <!-- ABOUT -->
-<section class="sctn-about">
+<section class="sctn-about" id="about">
 	<div class="about-text">
 		<p>Figs and Limes aims to provide you with great live music at your event.</p>
 		<ul>
@@ -24,7 +26,7 @@
 </section>
 
 <!-- BANDS -->
-<section class="sctn-bands">
+<section class="sctn-bands" id="bands">
 	<div>
 		{{#each bands}}
 			{{>bandTile}}
@@ -33,7 +35,7 @@
 </section>
 
 <!-- FAQ -->
-<section class="sctn-faq">
+<section class="sctn-faq" id="faq">
 	<div class="faq-text">
 		<div>
 			<p>What's the general process for booking an act?</p>
@@ -63,6 +65,6 @@
 </section>
 
 <!-- CONTACT -->
-<section class="sctn-contact">
+<section class="sctn-contact" id="contact">
 
 </section>

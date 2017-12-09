@@ -1,8 +1,3 @@
-a, div, nav, section, span {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 @font-face {
   font-family: Simplifica;
   src: url("../fonts/simplifica.ttf"); }
@@ -14,6 +9,15 @@ a, div, nav, section, span {
 @font-face {
   font-family: Gidole;
   src: url("../fonts/gidole.otf"); }
+
+@font-face {
+  font-family: Din;
+  src: url("../fonts/dinCondensed.otf"); }
+
+a, div, nav, section, span {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 html {
   font-size: 62.5%; }
@@ -43,21 +47,39 @@ section {
     background-color: #eee; }
 
 .sctn-landing {
+  position: relative;
   flex-direction: column;
-  font: 10rem Simplifica; }
-  .sctn-landing h1 {
-    position: relative;
-    font-size: 15rem; }
+  font: 10rem Simplifica;
+  background-image: url("/pics/landing.jpg");
+  background-size: cover;
+  background-position: center; }
 
-.nav-landing {
-  margin-left: 35rem; }
-  .nav-landing button {
-    margin: 0 2rem;
-    padding: .6rem .7rem .1rem .9rem;
-    font: 3rem Simplifica;
-    text-transform: uppercase; }
-    .nav-landing button:hover {
-      background-color: #eee; }
+.landing-text {
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 4vw;
+  padding: 3rem 4rem; }
+  .landing-text h1 {
+    position: relative;
+    font-size: 15rem;
+    color: white; }
+  .landing-text nav {
+    margin-top: 3rem;
+    width: 100%; }
+    .landing-text nav a {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 1rem .7rem .5rem .9rem;
+      border: 2px solid white;
+      font: 3rem Simplifica;
+      text-transform: uppercase;
+      color: white; }
+      .landing-text nav a:not(:last-child) {
+        margin-right: 2rem; }
+      .landing-text nav a:hover {
+        background-color: rgba(255, 255, 255, 0.15); }
 
 .about-text {
   flex-direction: column;
