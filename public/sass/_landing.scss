@@ -1,0 +1,50 @@
+.sctn-landing {
+	position: relative;
+	flex-direction: column;
+
+	font: 10rem Simplifica;
+	background-image: url('/pics/landing.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.landing-text {
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	margin: 4vw;
+	padding: 3rem 4rem;
+
+	h1 {
+		position: relative;
+		font-size: 15rem;
+		color: white;
+	}
+
+	nav {
+		margin-top: 3rem;
+		width: 100%;
+
+		a {
+			flex-grow: 1;
+			flex-basis: 0;
+
+			padding: 1rem .7rem .5rem .9rem;
+			border: 2px solid white;
+
+			font: 3rem Simplifica;
+			text-transform: uppercase;
+			color: white;
+
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
+
+			&:hover {
+				background-color: rgba(255, 255, 255, .15);
+			}
+		}
+	}
+}

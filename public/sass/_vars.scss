@@ -6,6 +6,8 @@
   align-items: center;
 }
 
-// FONTS
+a, div, nav, section, span {
+  @include flex();
+}
 
 // COLOURS

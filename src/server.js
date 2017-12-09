@@ -1,5 +1,6 @@
 const Express = require('express');
 const Handlebars = require('express-handlebars');
+const { bands } = require('./data.json');
 
 const app = Express();
 
@@ -14,7 +15,11 @@ app.set('view engine', 'hbs');
 app.use(Express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('home');
+  res.render('home', { bands });
+});
+
+app.get('/bands/:band', (req, res) => {
+	res.render('band');
 });
 
 app.set('port', process.env.PORT || 3000);

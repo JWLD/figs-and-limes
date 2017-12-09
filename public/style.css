@@ -1,17 +1,33 @@
+@font-face {
+  font-family: Simplifica;
+  src: url("../fonts/simplifica.ttf"); }
+
+@font-face {
+  font-family: Dense;
+  src: url("../fonts/dense.otf"); }
+
+@font-face {
+  font-family: Gidole;
+  src: url("../fonts/gidole.otf"); }
+
+@font-face {
+  font-family: Din;
+  src: url("../fonts/dinCondensed.otf"); }
+
+a, div, nav, section, span {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 html {
   font-size: 62.5%; }
 
-body, div {
+body, button, div, h1, nav, p, ul {
   border: 0;
   margin: 0;
   padding: 0;
   border-radius: 0;
   box-sizing: border-box; }
-
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 a:hover, button:hover {
   cursor: pointer; }
@@ -24,3 +40,92 @@ a {
 
 button {
   background-color: transparent; }
+
+section {
+  min-height: 100vh; }
+  section:nth-child(even) {
+    background-color: #eee; }
+
+.sctn-landing {
+  position: relative;
+  flex-direction: column;
+  font: 10rem Simplifica;
+  background-image: url("/pics/landing.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.landing-text {
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 4vw;
+  padding: 3rem 4rem; }
+  .landing-text h1 {
+    position: relative;
+    font-size: 15rem;
+    color: white; }
+  .landing-text nav {
+    margin-top: 3rem;
+    width: 100%; }
+    .landing-text nav a {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 1rem .7rem .5rem .9rem;
+      border: 2px solid white;
+      font: 3rem Simplifica;
+      text-transform: uppercase;
+      color: white; }
+      .landing-text nav a:not(:last-child) {
+        margin-right: 2rem; }
+      .landing-text nav a:hover {
+        background-color: rgba(255, 255, 255, 0.15); }
+
+.about-text {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+  padding: 2rem;
+  border-radius: 3px;
+  font: 2rem Gidole;
+  background-color: white;
+  box-shadow: 0 5px 10px -5px black; }
+  .about-text ul {
+    width: 100%;
+    padding-left: 2rem; }
+  .about-text ul, .about-text p:not(:last-child) {
+    margin-bottom: 2rem; }
+
+.sctn-bands a {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  color: black;
+  background-color: #eee;
+  font: 2rem Gidole;
+  box-shadow: 0 5px 10px -5px black; }
+
+.faq-text {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+  padding: 2rem;
+  border-radius: 3px;
+  font: 2rem Gidole;
+  background-color: white;
+  box-shadow: 0 5px 10px -5px black; }
+  .faq-text div {
+    flex-direction: column;
+    align-items: flex-start; }
+    .faq-text div p {
+      margin-bottom: .5rem; }
+    .faq-text div p:first-of-type {
+      font-weight: bold; }
+
+.band-page {
+  flex-direction: column; }
+  .band-page div {
+    background-image: url("../pics/redWeb.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; }
