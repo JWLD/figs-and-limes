@@ -109,9 +109,9 @@ section {
     .landing-text nav a {
       flex-grow: 1;
       flex-basis: 0;
-      padding: .8rem 0;
-      border: 2px solid white;
-      font: 3rem DinL;
+      padding: .6rem 0;
+      border: 3px solid white;
+      font: 3rem DinR;
       text-transform: uppercase;
       color: white; }
       .landing-text nav a:not(:last-child) {
