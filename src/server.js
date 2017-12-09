@@ -15,7 +15,7 @@ app.set('view engine', 'hbs');
 app.use(Express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('home', { bands });
+  res.render('landing', { bands });
 });
 
 app.get('/bands/:band', (req, res) => {
