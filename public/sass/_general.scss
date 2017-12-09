@@ -5,3 +5,27 @@ section {
 		background-color: #eee;
 	}
 }
+
+.top-btn {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+
+	width: 5rem;
+	height: 5rem;
+	margin: 2rem;
+	border-radius: .4rem;
+
+	color: white;
+	background-color: black;
+
+	transition: .15s;
+
+	i {
+		font-size: 3rem;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
