@@ -4,12 +4,12 @@
 @import 'reset';
 @import 'general';
 
-// NAV
-@import 'nav';
+// PARTIALS
+@import 'partials/nav';
 
 // SECTIONS
-@import 'landing';
-@import 'about';
-@import 'bands';
-@import 'faq';
-@import 'band';
+@import 'sections/landing';
+@import 'sections/about';
+@import 'sections/bands';
+@import 'sections/faq';
+@import 'sections/band';
