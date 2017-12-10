@@ -34,7 +34,7 @@ a, div, nav, section, span {
 html {
   font-size: 62.5%; }
 
-body, button, div, h1, nav, p, ul {
+body, button, div, h1, h3, nav, p, ul {
   border: 0;
   margin: 0;
   padding: 0;
@@ -52,11 +52,6 @@ a {
 
 button {
   background-color: transparent; }
-
-section {
-  min-height: 100vh; }
-  section:nth-child(even) {
-    background-color: #eee; }
 
 .top-btn {
   position: fixed;
@@ -80,6 +75,7 @@ section {
 .sctn-landing {
   position: relative;
   flex-direction: column;
+  height: 100vh;
   font: 10rem Simplifica;
   background-image: url("/pics/landing.jpg");
   background-size: cover;
@@ -110,7 +106,7 @@ section {
       flex-grow: 1;
       flex-basis: 0;
       padding: .6rem 0;
-      border: 3px solid white;
+      border: .3rem solid white;
       font: 3rem DinR;
       text-transform: uppercase;
       color: white; }
@@ -122,12 +118,11 @@ section {
 .about-text {
   flex-direction: column;
   align-items: flex-start;
-  width: 50vw;
+  margin: 10rem 0;
   padding: 2rem;
-  border-radius: 3px;
-  font: 2rem Gidole;
-  background-color: white;
-  box-shadow: 0 5px 10px -5px black; }
+  border: 1.5rem solid black;
+  font: 2rem DinM;
+  box-shadow: 0 .5rem 1rem -.5rem black; }
   .about-text ul {
     width: 100%;
     padding-left: 2rem; }
@@ -146,19 +141,22 @@ section {
 .faq-text {
   flex-direction: column;
   align-items: flex-start;
-  width: 50vw;
+  max-width: 50vw;
+  margin: 10rem 0;
   padding: 2rem;
-  border-radius: 3px;
-  font: 2rem Gidole;
-  background-color: white;
-  box-shadow: 0 5px 10px -5px black; }
+  border: 1.5rem solid black;
+  font: 2rem DinM;
+  box-shadow: 0 .5rem 1rem -.5rem black; }
   .faq-text div {
     flex-direction: column;
     align-items: flex-start; }
-    .faq-text div p {
+    .faq-text div h3 {
+      font: 2.5rem DinB;
       margin-bottom: .5rem; }
-    .faq-text div p:first-of-type {
-      font-weight: bold; }
+    .faq-text div p {
+      margin-left: 2rem; }
+    .faq-text div:not(:last-child) {
+      margin-bottom: 2rem; }
 
 .band-page {
   flex-direction: column; }
