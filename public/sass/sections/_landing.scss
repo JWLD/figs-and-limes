@@ -1,6 +1,7 @@
 .sctn-landing {
 	position: relative;
 	flex-direction: column;
+  height: 100vh;
 
 	font: 10rem Simplifica;
 	background-image: url('/pics/landing.jpg');
@@ -42,7 +43,7 @@
 			flex-basis: 0;
 
 			padding: .6rem 0;
-			border: 3px solid white;
+			border: .3rem solid white;
 
 			font: 3rem DinR;
 			text-transform: uppercase;
