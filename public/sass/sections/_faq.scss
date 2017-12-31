@@ -1,6 +1,6 @@
 .sctn-faq {
   margin-right: $sidebar;
-  background-color: white;
+  background-color: $panel-color;
 	border-top-right-radius: $section-border-radius;
 }
 
@@ -12,7 +12,7 @@
 		align-items: flex-start;
 
     h3 {
-      font: 2.5rem DinCB;
+      font: 2.5rem DinCM;
       margin-bottom: .5rem;
     }
 

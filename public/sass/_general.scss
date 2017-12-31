@@ -2,10 +2,9 @@ body {
   background-color: #333;
 }
 
-.top-btn {
+.nav-btn {
 	position: fixed;
-	left: 0;
-	bottom: 0;
+	z-index: 1;
 
 	width: 5rem;
 	height: 5rem;
@@ -24,6 +23,16 @@ body {
 	&:hover {
 		transform: scale(1.1);
 	}
+}
+
+.top {
+	right: 0;
+	bottom: 0;
+}
+
+.home {
+	right: 0;
+	top: 0;
 }
 
 .shrink {

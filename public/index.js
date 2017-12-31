@@ -13,4 +13,18 @@
       }
     }
   });
+
+	// load video
+	var videos = document.querySelectorAll('.video-wrap');
+
+	Array.from(videos).forEach((video) => {
+		video.addEventListener('click', function(e) {
+			const vidFrame = e.target.querySelector('iframe');
+			vidFrame.classList.add('activate');
+
+			setTimeout(() => {
+				vidFrame.src = 'https://www.youtube.com/embed/' + e.target.dataset.vid + '?autoplay=1';
+			}, 500);
+		});
+	});
 })();

@@ -3,6 +3,7 @@
 $section-spacing: 10rem;
 $sidebar: 15vw;
 $section-border-radius: 2rem;
+$panel-color: #ddd;
 
 // MIXINS
 
@@ -19,11 +20,15 @@ a, div, nav, section, span {
 @mixin textPanel() {
 	flex-direction: column;
 	align-items: flex-start;
+
 	max-width: 100rem;
 	margin: $section-spacing;
 	padding: 2.5rem;
+
 	border-radius: .5rem;
-	font: 2.15rem DinCM;
 	box-shadow: 0 .5rem 1rem -.5rem black;
-	background-color: #eee;
+	background-color: #333;
+
+	font: 2.3rem DinCL;
+	color: white;
 }

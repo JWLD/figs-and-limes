@@ -1,9 +1,47 @@
+{{>homeBtn}}
+
 <section class="band-page">
-	<div class="band-landing" style="background-image: url('/pics/bands/{{band.landing}}.jpg')">
+	<div class="band-landing" style="background-image: url('/pics/bands/{{band.landingImg}}.jpg')">
 		<h1>{{band.name}}</h1>
 	</div>
 
-	<p>Blurb blurb blurb blurb.</p>
-	<div>PHOTO</div>
-	<button>Book Us</button>
+	<div class="band-about">
+		<div>
+			<h2>ABOUT</h2>
+			{{#each band.blurb}}
+				<p>{{this}}</p>
+			{{/each}}
+		</div>
+		<div style="background-image: url('/pics/bands/{{band.aboutImg}}.jpg')"></div>
+		</div>
+	</div>
+
+	{{#if band.listen}}
+		<div class="band-listen">
+			<h2>LISTEN</h2>
+			<div>
+				<audio controls class="bandAudio">
+					<source src="/audio/{{band.listen.src}}.mp3">
+				</audio>
+				<span><i>{{band.listen.title}}</i></span>
+			</div>
+		</div>
+	{{/if}}
+
+	{{#if band.watch}}
+		<div class="band-watch">
+			<h2>WATCH</h2>
+			<button class="video-wrap" data-vid={{band.watch.id}} style="background-image: url('/pics/bands/{{band.watch.vidImg}}.jpg')">
+				<i class="material-icons">play_arrow</i>
+				<iframe frameborder="0" allowfullscreen></iframe>
+				<div class="overlay">
+					<span>The 45's - <i>These Boots Are Made For Walking</i></span>
+				</div>
+			</button>
+		</div>
+	{{/if}}
+
+	<div class="band-book">
+		<a href="mailto:figslimes@gmail.com?subject=Booking Enquiry - {{band.name}}&body=Please include date and location.">Book Us!</a>
+	</div>
 </section>
