@@ -96,7 +96,8 @@ body {
   height: 100vh;
   background-image: url("/pics/landing.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  box-shadow: 0 0 2rem .1rem black; }
 
 .landing-text {
   flex-direction: column;
@@ -144,8 +145,6 @@ body {
   max-width: 100rem;
   margin: 10rem;
   padding: 2.5rem;
-  box-shadow: 0 .5rem 1rem -.5rem black;
-  background-color: #ccc;
   font: 2.3rem DinCR;
   color: black; }
   .about-text ul {
@@ -196,8 +195,6 @@ body {
   max-width: 100rem;
   margin: 10rem;
   padding: 2.5rem;
-  box-shadow: 0 .5rem 1rem -.5rem black;
-  background-color: #ccc;
   font: 2.3rem DinCR;
   color: black; }
   .faq-text div {
