@@ -144,11 +144,10 @@ body {
   max-width: 100rem;
   margin: 10rem;
   padding: 2.5rem;
-  border-radius: .5rem;
   box-shadow: 0 .5rem 1rem -.5rem black;
-  background-color: #333;
-  font: 2.3rem DinCL;
-  color: white; }
+  background-color: #ccc;
+  font: 2.3rem DinCR;
+  color: black; }
   .about-text ul {
     width: 100%;
     padding-left: 2rem; }
@@ -197,11 +196,10 @@ body {
   max-width: 100rem;
   margin: 10rem;
   padding: 2.5rem;
-  border-radius: .5rem;
   box-shadow: 0 .5rem 1rem -.5rem black;
-  background-color: #333;
-  font: 2.3rem DinCL;
-  color: white; }
+  background-color: #ccc;
+  font: 2.3rem DinCR;
+  color: black; }
   .faq-text div {
     flex-direction: column;
     align-items: flex-start; }

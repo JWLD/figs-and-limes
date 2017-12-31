@@ -25,10 +25,10 @@ a, div, nav, section, span {
 	margin: $section-spacing;
 	padding: 2.5rem;
 
-	border-radius: .5rem;
+	// border-radius: .5rem;
 	box-shadow: 0 .5rem 1rem -.5rem black;
-	background-color: #333;
+	background-color: #ccc;
 
-	font: 2.3rem DinCL;
-	color: white;
+	font: 2.3rem DinCR;
+	color: black;
 }
