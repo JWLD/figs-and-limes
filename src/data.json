@@ -2,15 +2,18 @@
 	"bands": [
 		{
 			"name": "The 45's",
-			"url": "the-45s"
+			"url": "the-45s",
+			"thumb": "45s_1"
 		},
 		{
 			"name": "Cassettes In The Sun",
-			"url": "cassettes-in-the-sun"
+			"url": "cassettes-in-the-sun",
+			"thumb": "cassettes_1"
 		},
 		{
 			"name": "Soulsters",
-			"url": "soulsters"
+			"url": "soulsters",
+			"thumb": "soulsters_1"
 		}
 	],
 	"faqs": [

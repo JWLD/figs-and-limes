@@ -1,21 +1,38 @@
-.sctn-bands {
-  // background-color: white;
-}
+$tileHeight: 20rem;
 
 .bands-wrap {
+	flex-wrap: wrap;
   margin: $section-spacing 0;
 
 	a {
-		width: 20rem;
-		height: 20rem;
+		overflow: hidden;
+		height: $tileHeight;
+		width: $tileHeight * 2.25;
+		margin: 2rem;
 
-		color: black;
-		background-color: #eee;
-		font: 2rem Gidole;
+		border-radius: .4rem;
+		color: white;
+		background-color: #4a4a4a;
+		font: 2rem DinCM;
 		box-shadow: 0 5px 10px -5px black;
 
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
+		div {
+			flex-grow: 1;
+			height: 100%;
+
+			background-size: cover;
+			background-position: center;
+		}
+
+		span {
+			width: $tileHeight;
+			height: 100%;
+			transition: .3s;
+		}
+
+		&:hover span {
+			width: $tileHeight * 1.25;
+			font-size: 3rem;
+		}
 	}
 }

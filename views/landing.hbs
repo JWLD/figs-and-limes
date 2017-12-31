@@ -34,7 +34,10 @@
 <section class="sctn-bands" id="bands">
 	<div class="bands-wrap">
 		{{#each bands}}
-			{{>bandTile}}
+			<a href="/bands/{{url}}">
+				<div style="background-image: url('/pics/bands/{{thumb}}.jpg');"></div>
+				<span>{{name}}</span>
+			</a>
 		{{/each}}
 	</div>
 </section>

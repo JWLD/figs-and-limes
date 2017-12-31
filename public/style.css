@@ -58,7 +58,7 @@ button {
   background-color: transparent; }
 
 body {
-  background-color: #ddd; }
+  background-color: #333; }
 
 .top-btn {
   position: fixed;
@@ -124,7 +124,8 @@ body {
 
 .sctn-about {
   margin-left: 30rem;
-  background-color: white; }
+  background-color: white;
+  border-bottom-left-radius: 2rem; }
 
 .about-text {
   flex-direction: column;
@@ -142,20 +143,35 @@ body {
     margin-bottom: 2rem; }
 
 .bands-wrap {
+  flex-wrap: wrap;
   margin: 10rem 0; }
   .bands-wrap a {
-    width: 20rem;
+    overflow: hidden;
     height: 20rem;
-    color: black;
-    background-color: #eee;
-    font: 2rem Gidole;
+    width: 45rem;
+    margin: 2rem;
+    border-radius: .4rem;
+    color: white;
+    background-color: #4a4a4a;
+    font: 2rem DinCM;
     box-shadow: 0 5px 10px -5px black; }
-    .bands-wrap a:not(:last-child) {
-      margin-right: 2rem; }
+    .bands-wrap a div {
+      flex-grow: 1;
+      height: 100%;
+      background-size: cover;
+      background-position: center; }
+    .bands-wrap a span {
+      width: 20rem;
+      height: 100%;
+      transition: .3s; }
+    .bands-wrap a:hover span {
+      width: 25rem;
+      font-size: 3rem; }
 
 .sctn-faq {
   margin-right: 30rem;
-  background-color: white; }
+  background-color: white;
+  border-top-right-radius: 2rem; }
 
 .faq-text {
   flex-direction: column;
