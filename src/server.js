@@ -1,6 +1,6 @@
 const Express = require('express');
 const Handlebars = require('express-handlebars');
-const { bands } = require('./data.json');
+const { bands, faqs } = require('./data.json');
 
 const app = Express();
 
@@ -15,7 +15,7 @@ app.set('view engine', 'hbs');
 app.use(Express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('landing', { bands });
+  res.render('landing', { bands, faqs });
 });
 
 app.get('/bands/:band', (req, res) => {

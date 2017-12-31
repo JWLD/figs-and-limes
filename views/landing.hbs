@@ -42,29 +42,11 @@
 <!-- FAQ -->
 <section class="sctn-faq" id="faq">
 	<div class="faq-text">
-		<div>
-			<h3>What's the general process for booking an act?</h3>
-			<p>Browse through our website, pick the band for you and then send us an email with the event information! Easy.</p>
-		</div>
-		<div>
-			<h3>Can I make a deposit to secure the act?</h3>
-			<p>Yes, after we've confirmed the act's availability, a deposit will be needed to secure the act for your event.</p>
-		</div>
-		<div>
-			<h3>Can I speak to the act before the event?</h3>
-			<p>Yes, we'll arrange for one of the band members to give you a call around a month before your event, to say hello and confirm any details. It is possible to speak to the band before this call, just send us an email and we'll organise it.</p>
-		</div>
-		<div>
-			<h3>Can I see the act perform before I book?</h3>
-			<p>Some of the acts occasionally play public gigs / perform in public. When you enquire we'll let you know of any upcoming performances.</p>
-		</div>
-		<div>
-			<h3>I'm planning an event abroad. Are your acts available outside of the UK?</h3>
-			<p>Our acts are available worldwide. If you wish to book an act for an event abroad, we advise you contact us with as much notice as possible to ensure that travel, accommodation and other details can be arranged in good time.</p>
-		</div>
-		<div>
-			<h3>I'm interested in booking one of your acts for a residency, is this possible?</h3>
-			<p>Some of our acts are willing to do short term residencies in worldwide locations. As above, we recommend you contact us early to ensure your best chance of securing the act's availability.</p>
-		</div>
+		{{#each faqs}}
+			<div>
+				<h3>{{q}}</h3>
+				<p>{{a}}</p>
+			</div>
+		{{/each}}
 	</div>
 </section>
