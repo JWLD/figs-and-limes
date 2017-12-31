@@ -1,13 +1,10 @@
+.sctn-about {
+  margin-left: $sidebar;
+  background-color: white;
+}
+
 .about-text {
-	flex-direction: column;
-	align-items: flex-start;
-
-  margin: $section-spacing 0;
-	padding: 2rem;
-  border: 1.5rem solid black;
-
-	font: 2rem DinM;
-	box-shadow: 0 .5rem 1rem -.5rem black;
+	@include textPanel;
 
 	ul {
 		width: 100%;

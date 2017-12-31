@@ -1,21 +1,17 @@
+.sctn-faq {
+  margin-right: $sidebar;
+  background-color: white;
+}
+
 .faq-text {
-	flex-direction: column;
-	align-items: flex-start;
-
-  max-width: 50vw;
-  margin: $section-spacing 0;
-	padding: 2rem;
-	border: 1.5rem solid black;
-
-	font: 2rem DinM;
-  box-shadow: 0 .5rem 1rem -.5rem black;
+	@include textPanel;
 
 	div {
 		flex-direction: column;
 		align-items: flex-start;
 
     h3 {
-      font: 2.5rem DinB;
+      font: 2.5rem DinCB;
       margin-bottom: .5rem;
     }
 

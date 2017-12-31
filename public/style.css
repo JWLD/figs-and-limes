@@ -1,30 +1,34 @@
 @font-face {
-  font-family: Simplifica;
-  src: url("../fonts/Simplifica.ttf"); }
+  font-family: DinCB;
+  src: url("../fonts/DinConBold.otf"); }
 
 @font-face {
-  font-family: Dense;
-  src: url("../fonts/Dense.otf"); }
+  font-family: DinCM;
+  src: url("../fonts/DinConMedium.otf"); }
 
 @font-face {
-  font-family: Gidole;
-  src: url("../fonts/Gidole.otf"); }
+  font-family: DinCR;
+  src: url("../fonts/DinConRegular.otf"); }
+
+@font-face {
+  font-family: DinCL;
+  src: url("../fonts/DinConLight.otf"); }
 
 @font-face {
   font-family: DinB;
-  src: url("../fonts/DinConB.otf"); }
+  src: url("../fonts/DinBold.otf"); }
 
 @font-face {
   font-family: DinM;
-  src: url("../fonts/DinConM.otf"); }
+  src: url("../fonts/DinMedium.otf"); }
 
 @font-face {
   font-family: DinR;
-  src: url("../fonts/DinConR.otf"); }
+  src: url("../fonts/DinRegular.otf"); }
 
 @font-face {
   font-family: DinL;
-  src: url("../fonts/DinConL.otf"); }
+  src: url("../fonts/DinLight.otf"); }
 
 a, div, nav, section, span {
   display: flex;
@@ -52,6 +56,9 @@ a {
 
 button {
   background-color: transparent; }
+
+body {
+  background-color: #ddd; }
 
 .top-btn {
   position: fixed;
@@ -91,13 +98,13 @@ button {
   .landing-text h1 {
     position: relative;
     color: white;
-    font: 15rem DinB;
+    font: 15rem DinCB;
     text-transform: uppercase; }
   .landing-text span {
     align-self: flex-end;
     margin-top: -2rem;
     color: white;
-    font: 4rem DinB;
+    font: 4rem DinCB;
     text-transform: uppercase; }
   .landing-text nav {
     margin-top: 3rem;
@@ -107,7 +114,7 @@ button {
       flex-basis: 0;
       padding: .6rem 0;
       border: .3rem solid white;
-      font: 3rem DinR;
+      font: 3rem DinCR;
       text-transform: uppercase;
       color: white; }
       .landing-text nav a:not(:last-child) {
@@ -115,13 +122,18 @@ button {
       .landing-text nav a:hover {
         background-color: rgba(255, 255, 255, 0.15); }
 
+.sctn-about {
+  margin-left: 30rem;
+  background-color: white; }
+
 .about-text {
   flex-direction: column;
   align-items: flex-start;
-  margin: 10rem 0;
+  max-width: 100rem;
+  margin: 10rem;
   padding: 2rem;
   border: 1.5rem solid black;
-  font: 2rem DinM;
+  font: 2rem DinCM;
   box-shadow: 0 .5rem 1rem -.5rem black; }
   .about-text ul {
     width: 100%;
@@ -129,29 +141,36 @@ button {
   .about-text ul, .about-text p:not(:last-child) {
     margin-bottom: 2rem; }
 
-.sctn-bands a {
-  width: 20rem;
-  height: 20rem;
-  margin: 1rem;
-  color: black;
-  background-color: #eee;
-  font: 2rem Gidole;
-  box-shadow: 0 5px 10px -5px black; }
+.bands-wrap {
+  margin: 10rem 0; }
+  .bands-wrap a {
+    width: 20rem;
+    height: 20rem;
+    color: black;
+    background-color: #eee;
+    font: 2rem Gidole;
+    box-shadow: 0 5px 10px -5px black; }
+    .bands-wrap a:not(:last-child) {
+      margin-right: 2rem; }
+
+.sctn-faq {
+  margin-right: 30rem;
+  background-color: white; }
 
 .faq-text {
   flex-direction: column;
   align-items: flex-start;
-  max-width: 50vw;
-  margin: 10rem 0;
+  max-width: 100rem;
+  margin: 10rem;
   padding: 2rem;
   border: 1.5rem solid black;
-  font: 2rem DinM;
+  font: 2rem DinCM;
   box-shadow: 0 .5rem 1rem -.5rem black; }
   .faq-text div {
     flex-direction: column;
     align-items: flex-start; }
     .faq-text div h3 {
-      font: 2.5rem DinB;
+      font: 2.5rem DinCB;
       margin-bottom: .5rem; }
     .faq-text div p {
       margin-left: 2rem; }

@@ -1,12 +1,21 @@
 .sctn-bands {
+  // background-color: white;
+}
+
+.bands-wrap {
+  margin: $section-spacing 0;
+
 	a {
 		width: 20rem;
 		height: 20rem;
-		margin: 1rem;
 
 		color: black;
 		background-color: #eee;
 		font: 2rem Gidole;
 		box-shadow: 0 5px 10px -5px black;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
 	}
 }
