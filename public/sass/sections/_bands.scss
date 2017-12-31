@@ -1,4 +1,4 @@
-$tileHeight: 20rem;
+$tileHeight: 22rem;
 
 .bands-wrap {
 	flex-wrap: wrap;
@@ -13,10 +13,9 @@ $tileHeight: 20rem;
 		border-radius: .4rem;
 		color: white;
 		background-color: #4a4a4a;
-		font: 2rem DinCM;
 		box-shadow: 0 5px 10px -5px black;
 
-		div {
+		.band-thumb {
 			flex-grow: 1;
 			height: 100%;
 
@@ -24,13 +23,22 @@ $tileHeight: 20rem;
 			background-position: center;
 		}
 
-		span {
+		.band-name {
 			width: $tileHeight;
-			height: 100%;
 			transition: .3s;
+
+			span {
+				height: 100%;
+				width: $tileHeight;
+				padding: 2.5rem;
+
+				text-align: center;
+				font: 3rem DinCM;
+				text-transform: uppercase;
+			}
 		}
 
-		&:hover span {
+		&:hover .band-name {
 			width: $tileHeight * 1.25;
 			font-size: 3rem;
 		}

@@ -19,7 +19,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/bands/:band', (req, res) => {
-	res.render('band');
+	res.render('band', {
+		band: bands.find(band => band.url === req.params.band)
+	});
 });
 
 app.set('port', process.env.PORT || 3000);

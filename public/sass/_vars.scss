@@ -1,7 +1,7 @@
 // SIZING
 
 $section-spacing: 10rem;
-$sidebar: 30rem;
+$sidebar: 15vw;
 $section-border-radius: 2rem;
 
 // MIXINS
@@ -21,8 +21,9 @@ a, div, nav, section, span {
 	align-items: flex-start;
 	max-width: 100rem;
 	margin: $section-spacing;
-	padding: 2rem;
-	border: 1.5rem solid black;
-	font: 2rem DinCM;
+	padding: 2.5rem;
+	border-radius: .5rem;
+	font: 2.15rem DinCM;
 	box-shadow: 0 .5rem 1rem -.5rem black;
+	background-color: #eee;
 }
