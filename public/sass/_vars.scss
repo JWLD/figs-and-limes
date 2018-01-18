@@ -15,7 +15,7 @@ $panel-shadow: 0 5px 10px -5px black;
   align-items: center;
 }
 
-a, div, footer, nav, section, span {
+a, div, footer, label, nav, section, span {
   @include flex();
 }
 

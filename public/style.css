@@ -30,7 +30,7 @@
   font-family: DinL;
   src: url("../fonts/DinLight.otf"); }
 
-a, div, footer, nav, section, span {
+a, div, footer, label, nav, section, span {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -38,7 +38,7 @@ a, div, footer, nav, section, span {
 html {
   font-size: 62.5%; }
 
-body, button, div, h1, h2, h3, nav, p, span, ul {
+body, button, div, h1, h2, h3, input, nav, p, span, textarea, ul {
   border: 0;
   margin: 0;
   padding: 0;
@@ -89,6 +89,93 @@ section h2 {
 
 .shrink {
   transform: scale(0); }
+
+.contact-form-wrap {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100vw;
+  transition: .5s; }
+  .contact-form-wrap form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 6rem;
+    background-color: #eee;
+    box-shadow: 0 5px 10px -5px black;
+    border-radius: .6rem;
+    color: black; }
+    .contact-form-wrap form .close-btn {
+      position: absolute;
+      top: -1.5rem;
+      right: -1.5rem;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 100%;
+      box-shadow: 0 5px 10px -5px black;
+      background-color: #555;
+      color: white;
+      font-size: 2.4rem; }
+      .contact-form-wrap form .close-btn:hover span {
+        transform: rotate(180deg); }
+      .contact-form-wrap form .close-btn span {
+        transition: .4s; }
+    .contact-form-wrap form h2 {
+      position: absolute;
+      top: -5rem;
+      font: 5rem DinCB;
+      width: 25rem;
+      text-align: center;
+      border-radius: .4rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem 2rem;
+      color: white;
+      background-color: #555;
+      transform: rotate(4deg); }
+    .contact-form-wrap form > div:not(:last-child) {
+      margin-bottom: 2rem; }
+      .contact-form-wrap form > div:not(:last-child) input:first-child {
+        margin-right: 3rem; }
+    .contact-form-wrap form label {
+      flex-direction: column;
+      align-items: flex-start;
+      font: 2.5rem DinCB;
+      color: #666; }
+    .contact-form-wrap form input, .contact-form-wrap form textarea {
+      width: 30rem;
+      height: auto;
+      padding: 1rem 0;
+      font: 2rem 'Roboto', sans-serif;
+      border-bottom: 3px solid #666;
+      background: transparent;
+      transition: .2s; }
+      .contact-form-wrap form input:focus, .contact-form-wrap form textarea:focus {
+        outline: none;
+        border-color: tomato; }
+      .contact-form-wrap form input::placeholder, .contact-form-wrap form textarea::placeholder {
+        color: #666; }
+    .contact-form-wrap form textarea {
+      width: 100%;
+      height: 16rem;
+      resize: none; }
+    .contact-form-wrap form button[type=submit] {
+      width: 20rem;
+      margin-top: 4rem;
+      padding: 1.2rem;
+      border-radius: .4rem;
+      background-color: #555;
+      font: 5rem DinCB;
+      color: white; }
+      .contact-form-wrap form button[type=submit]:hover {
+        color: tomato; }
+
+.show-form {
+  left: 0; }
 
 .sctn-landing {
   position: relative;
