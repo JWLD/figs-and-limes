@@ -30,7 +30,7 @@
   font-family: DinL;
   src: url("../fonts/DinLight.otf"); }
 
-a, div, nav, section, span {
+a, div, footer, nav, section, span {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -145,7 +145,7 @@ section h2 {
   max-width: 100rem;
   margin: 10rem;
   padding: 2.5rem;
-  font: 2.3rem DinCR;
+  font: 1.7rem 'Roboto', sans-serif;
   color: black;
   max-width: 65rem; }
   .about-text ul {
@@ -198,7 +198,8 @@ section h2 {
 .sctn-faq {
   margin-right: 15vw;
   background-color: #ddd;
-  border-top-right-radius: 2rem; }
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem; }
 
 .faq-text {
   flex-direction: column;
@@ -206,13 +207,13 @@ section h2 {
   max-width: 100rem;
   margin: 10rem;
   padding: 2.5rem;
-  font: 2.3rem DinCR;
+  font: 1.7rem 'Roboto', sans-serif;
   color: black; }
   .faq-text div {
     flex-direction: column;
     align-items: flex-start; }
     .faq-text div h3 {
-      font: 2.5rem DinCM;
+      font: bold 2rem 'Roboto', sans-serif;
       margin-bottom: .5rem; }
     .faq-text div p {
       margin-left: 2rem; }
@@ -339,3 +340,10 @@ section h2 {
       color: white;
       font: 5rem DinCM;
       text-transform: uppercase; }
+
+footer {
+  height: 10rem; }
+  footer span {
+    font: 3rem DinCB;
+    text-transform: uppercase;
+    color: white; }

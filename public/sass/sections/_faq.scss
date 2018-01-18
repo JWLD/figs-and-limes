@@ -2,6 +2,7 @@
   margin-right: $sidebar;
   background-color: $panel-color;
 	border-top-right-radius: $section-border-radius;
+	border-bottom-right-radius: $section-border-radius;
 }
 
 .faq-text {
@@ -12,7 +13,7 @@
 		align-items: flex-start;
 
     h3 {
-      font: 2.5rem DinCM;
+      font: bold 2rem 'Roboto', sans-serif;
       margin-bottom: .5rem;
     }
 

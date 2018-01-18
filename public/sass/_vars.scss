@@ -15,7 +15,7 @@ $panel-shadow: 0 5px 10px -5px black;
   align-items: center;
 }
 
-a, div, nav, section, span {
+a, div, footer, nav, section, span {
   @include flex();
 }
 
@@ -27,6 +27,6 @@ a, div, nav, section, span {
 	margin: $section-spacing;
 	padding: 2.5rem;
 
-	font: 2.3rem DinCR;
+	font: 1.7rem 'Roboto', sans-serif;
 	color: black;
 }
