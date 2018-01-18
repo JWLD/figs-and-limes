@@ -38,7 +38,25 @@
 			],
 			"watch": {
 				"id": "Bbm800e-Qn4",
+				"caption": "The 45's - <i>These Boots Are Made For Walking</i>",
 				"vidImg": "45s_2"
+			}
+		},
+		{
+			"name": "The Hucklebuck",
+			"url": "the-hucklebuck",
+			"thumbImg": "hucklebuck_2",
+			"landingImg": "hucklebuck_2",
+			"aboutImg": "hucklebuck_1",
+			"blurb": [
+				"The Hucklebuck are a no nonsense blues band playing original interpretations of straight ahead, early jump blues, authentic Texas and Chicago material.",
+				"Collectively the band has played with some incredible roots bands and musicians such as: Pee Wee Ellis, Martha High, Andy Sheppard, Rodriguez, Phantom Limb, Marc Ford, Lillian Boutte etc.",
+				"The Hucklebuck evolved out of their desire to hear blues music being played the way they'd want to hear it - swinging, dynamic, melodic and full of bold statements."
+			],
+			"watch": {
+				"id": "yb8r1B83Bw0",
+				"caption": "The Hucklebuck - <i>Please Love Me</i>",
+				"vidImg": "hucklebuck_3"
 			}
 		}
 	],
