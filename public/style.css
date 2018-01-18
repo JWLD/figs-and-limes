@@ -177,17 +177,21 @@ section h2 {
       height: 100%;
       background-size: cover;
       background-position: center; }
-    .bands-wrap a .band-name {
+    .bands-wrap a .band-info {
+      flex-direction: column;
       width: 22rem;
-      transition: .3s; }
-      .bands-wrap a .band-name span {
+      transition: .3s;
+      padding: 2.5rem; }
+      .bands-wrap a .band-info span:first-child {
         height: 100%;
-        width: 22rem;
-        padding: 2.5rem;
+        max-width: 17rem;
         text-align: center;
         font: 3rem DinCM;
         text-transform: uppercase; }
-    .bands-wrap a:hover .band-name {
+      .bands-wrap a .band-info span:last-child {
+        margin-top: 1rem;
+        font: 2rem DinCL; }
+    .bands-wrap a:hover .band-info {
       width: 27.5rem;
       font-size: 3rem; }
 

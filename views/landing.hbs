@@ -29,7 +29,10 @@
 		{{#each bands}}
 			<a href="/bands/{{url}}" target="_blank">
 				<div class="band-thumbImg" style="background-image: url('/pics/bands/{{thumbImg}}.jpg');"></div>
-				<div class="band-name"><span>{{name}}</span></div>
+				<div class="band-info">
+					<span>{{name}}</span>
+					<span>- {{subtitle}} -</span>
+				</div>
 			</a>
 		{{/each}}
 	</div>

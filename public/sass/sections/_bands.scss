@@ -32,22 +32,28 @@ $tileHeight: 22rem;
 			background-position: center;
 		}
 
-		.band-name {
+		.band-info {
+			flex-direction: column;
 			width: $tileHeight;
 			transition: .3s;
+			padding: 2.5rem;
 
-			span {
+			span:first-child {
 				height: 100%;
-				width: $tileHeight;
-				padding: 2.5rem;
+				max-width: $tileHeight - 5rem;
 
 				text-align: center;
 				font: 3rem DinCM;
 				text-transform: uppercase;
 			}
+
+			span:last-child {
+				margin-top: 1rem;
+				font: 2rem DinCL;
+			}
 		}
 
-		&:hover .band-name {
+		&:hover .band-info {
 			width: $tileHeight * 1.25;
 			font-size: 3rem;
 		}

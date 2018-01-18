@@ -4,6 +4,7 @@
 			"name": "The 45's",
 			"url": "the-45s",
 			"thumbImg": "45s_1",
+			"subtitle": "Fuzzy Motown",
 			"landingImg": "45s_2",
 			"aboutImg": "45s_1",
 			"blurb": [
@@ -21,6 +22,7 @@
 			"name": "Cassettes In The Sun",
 			"url": "cassettes-in-the-sun",
 			"thumbImg": "cassettes_1",
+			"subtitle": "Retro Indie Rock",
 			"landingImg": "cassettes_1",
 			"aboutImg": "cassettes_2",
 			"blurb": [
@@ -37,6 +39,7 @@
 			"name": "The Hucklebuck",
 			"url": "the-hucklebuck",
 			"thumbImg": "hucklebuck_2",
+			"subtitle": "Dirty Blues",
 			"landingImg": "hucklebuck_2",
 			"aboutImg": "hucklebuck_1",
 			"blurb": [
@@ -54,6 +57,7 @@
 			"name": "Soulsters",
 			"url": "soulsters",
 			"thumbImg": "soulsters_1",
+			"subtitle": "Pop Funk N Soul",
 			"landingImg": "soulsters_1",
 			"aboutImg": "soulsters_2",
 			"blurb": [
