@@ -142,7 +142,8 @@ body {
   margin: 10rem;
   padding: 2.5rem;
   font: 2.3rem DinCR;
-  color: black; }
+  color: black;
+  max-width: 65rem; }
   .about-text ul {
     width: 100%;
     padding-left: 2rem; }
@@ -243,7 +244,7 @@ body {
       .band-page .band-about div:first-child p:not(:last-child) {
         margin-bottom: 2rem; }
     .band-page .band-about div:last-child {
-      min-width: 30rem;
+      min-width: 40rem;
       height: 30rem;
       margin-left: 4rem;
       box-shadow: 0 5px 10px -5px black;

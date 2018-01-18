@@ -6,6 +6,7 @@
 
 .about-text {
 	@include textPanel;
+	max-width: 65rem;
 
 	ul {
 		width: 100%;

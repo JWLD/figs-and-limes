@@ -1,6 +1,23 @@
 {
 	"bands": [
 		{
+			"name": "The 45's",
+			"url": "the-45s",
+			"thumbImg": "45s_1",
+			"landingImg": "45s_2",
+			"aboutImg": "45s_1",
+			"blurb": [
+				"The 45's mean business! An international party band that play classic motown, soul and old school R 'n' B but take it up a notch!",
+				"Playing classics by Elvis, Little Richard, Otis Redding and others but with fuzzed up guitars, grooving drums and sweet vocal harmonies.",
+				"The guys play with boatloads of enthusiasm, guaranteed to electrify energetic crowds and incite dancing among the guests."
+			],
+			"watch": {
+				"id": "Bbm800e-Qn4",
+				"caption": "The 45's - <i>These Boots Are Made For Walking</i>",
+				"vidImg": "45s_5"
+			}
+		},
+		{
 			"name": "Cassettes In The Sun",
 			"url": "cassettes-in-the-sun",
 			"thumbImg": "cassettes_1",
@@ -14,32 +31,6 @@
 			"listen": {
 				"src": "cassettes",
 				"title": "Chelsea Dagger"
-			}
-		},
-		{
-			"name": "Soulsters",
-			"url": "soulsters",
-			"thumbImg": "soulsters_1",
-			"landingImg": "soulsters_1",
-			"aboutImg": "soulsters_1",
-			"blurb": [
-				"Insert blurb here!"
-			]
-		},
-		{
-			"name": "The 45's",
-			"url": "the-45s",
-			"thumbImg": "45s_1",
-			"landingImg": "45s_2",
-			"aboutImg": "45s_1",
-			"blurb": [
-				"The 45's mean business! An international party band that play classic motown, soul and old school R 'n' B but take it up a notch!",
-				"Playing classics by Elvis, Little Richard, Otis Redding and others but with fuzzed up guitars, grooving drums and sweet vocal harmonies. The guys play with boatloads of enthusiasm. Guaranteed to electrify energetic crowds and incite dancing among the guests."
-			],
-			"watch": {
-				"id": "Bbm800e-Qn4",
-				"caption": "The 45's - <i>These Boots Are Made For Walking</i>",
-				"vidImg": "45s_2"
 			}
 		},
 		{
@@ -57,6 +48,23 @@
 				"id": "yb8r1B83Bw0",
 				"caption": "The Hucklebuck - <i>Please Love Me</i>",
 				"vidImg": "hucklebuck_3"
+			}
+		},
+		{
+			"name": "Soulsters",
+			"url": "soulsters",
+			"thumbImg": "soulsters_1",
+			"landingImg": "soulsters_1",
+			"aboutImg": "soulsters_2",
+			"blurb": [
+				"Soulsters are a professional 8 piece Pop, Soul, Funk and Motown covers band, featuring some of the busiest and best musicians in the South West",
+				"They pride themselves on their eclectic repertoire, and the energy and musicianship that is put into every performance.",
+				"Having collectively performed at hundreds of weddings and functions with countless other bands, Soulsters came together to build on all their experiences and focus on music that they were passionate about."
+			],
+			"watch": {
+				"id": "XSTSj1UEV_k",
+				"caption": "Soulsters - <i>Wedding & Function Band</i>",
+				"vidImg": "soulsters_4"
 			}
 		}
 	],
