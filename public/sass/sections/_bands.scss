@@ -1,8 +1,17 @@
 $tileHeight: 22rem;
 
+.sctn-bands {
+	flex-direction: column;
+
+	h2 {
+		color: white;
+		margin-top: $section-spacing;
+	}
+}
+
 .bands-wrap {
 	flex-wrap: wrap;
-  margin: $section-spacing 0;
+  margin-bottom: $section-spacing;
 
 	a {
 		overflow: hidden;

@@ -60,6 +60,10 @@ button {
 body {
   background-color: #333; }
 
+section h2 {
+  font: 7rem DinCB;
+  margin-bottom: 1.5rem; }
+
 .nav-btn {
   position: fixed;
   z-index: 1;
@@ -150,9 +154,15 @@ body {
   .about-text ul, .about-text p:not(:last-child) {
     margin-bottom: 2rem; }
 
+.sctn-bands {
+  flex-direction: column; }
+  .sctn-bands h2 {
+    color: white;
+    margin-top: 10rem; }
+
 .bands-wrap {
   flex-wrap: wrap;
-  margin: 10rem 0; }
+  margin-bottom: 10rem; }
   .bands-wrap a {
     overflow: hidden;
     height: 22rem;
