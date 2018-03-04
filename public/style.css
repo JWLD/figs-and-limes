@@ -83,8 +83,7 @@ section h2 {
   margin-bottom: 1.5rem; }
   @media (max-width: 768px) {
     section h2 {
-      margin-left: auto;
-      margin-right: auto; } }
+      margin: 0 auto 3rem auto; } }
 
 .nav-btn {
   position: fixed;
@@ -370,6 +369,16 @@ section h2 {
       margin-left: 2rem; }
     .faq-text div:not(:last-child) {
       margin-bottom: 2rem; }
+
+@media (max-width: 768px) {
+  .faq-text div:not(:last-child) {
+    margin-bottom: 4rem; }
+  .faq-text div p {
+    margin-top: 1rem; } }
+
+@media (max-width: 540px) {
+  .faq-text div p {
+    margin-left: 0; } }
 
 .band-page {
   flex-direction: column;

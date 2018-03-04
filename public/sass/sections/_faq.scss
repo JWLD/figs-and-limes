@@ -31,3 +31,21 @@
     }
   }
 }
+
+@media (max-width: $break) {
+  .faq-text div {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .faq-text div p {
+    margin-left: 0;
+  }
+}
