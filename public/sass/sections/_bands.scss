@@ -60,7 +60,7 @@ $tileHeight: 22rem;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: $break2) {
   .bands-wrap a {
     flex-direction: column;
     width: 90vw;

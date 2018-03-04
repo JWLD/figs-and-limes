@@ -6,7 +6,8 @@ $section-border-radius: 2rem;
 $panel-color: #ddd;
 $landing-shadow: 0 0 2rem 0.1rem black;
 $panel-shadow: 0 5px 10px -5px black;
-$break: 768px;
+$break1: 768px;
+$break2: 540px;
 
 // MIXINS
 
@@ -37,11 +38,11 @@ span {
   font: 1.7rem 'Roboto', sans-serif;
   color: black;
 
-  @media (max-width: $break) {
+  @media (max-width: $break1) {
     margin: 6rem 1rem;
   }
 
-  @media (max-width: 540px) {
+  @media (max-width: $break2) {
     margin: 6rem 0;
   }
 }
