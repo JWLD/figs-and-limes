@@ -266,6 +266,9 @@ section h2 {
   max-width: 65rem; }
   @media (max-width: 768px) {
     .about-text {
+      margin: 6rem 1rem; } }
+  @media (max-width: 540px) {
+    .about-text {
       margin: 6rem 0; } }
   .about-text ul {
     width: 100%;
@@ -352,6 +355,9 @@ section h2 {
   font: 1.7rem 'Roboto', sans-serif;
   color: black; }
   @media (max-width: 768px) {
+    .faq-text {
+      margin: 6rem 1rem; } }
+  @media (max-width: 540px) {
     .faq-text {
       margin: 6rem 0; } }
   .faq-text div {

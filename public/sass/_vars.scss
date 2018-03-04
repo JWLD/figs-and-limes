@@ -38,6 +38,10 @@ span {
   color: black;
 
   @media (max-width: $break) {
+    margin: 6rem 1rem;
+  }
+
+  @media (max-width: 540px) {
     margin: 6rem 0;
   }
 }
