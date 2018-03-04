@@ -1,19 +1,25 @@
 .sctn-about {
   margin-left: $sidebar;
   background-color: $panel-color;
-	border-bottom-left-radius: $section-border-radius;
+  border-bottom-left-radius: $section-border-radius;
+
+  @media (max-width: $break) {
+    margin: 0;
+    border-radius: 0;
+  }
 }
 
 .about-text {
-	@include textPanel;
-	max-width: 65rem;
+  @include textPanel;
+  max-width: 65rem;
 
-	ul {
-		width: 100%;
-		padding-left: 2rem;
-	}
+  ul {
+    width: 100%;
+    padding-left: 2rem;
+  }
 
-	ul, p:not(:last-child) {
-		margin-bottom: 2rem;
-	}
+  ul,
+  p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }

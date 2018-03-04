@@ -30,7 +30,13 @@
   font-family: DinL;
   src: url("../fonts/DinLight.otf"); }
 
-a, div, footer, label, nav, section, span {
+a,
+div,
+footer,
+label,
+nav,
+section,
+span {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -38,14 +44,26 @@ a, div, footer, label, nav, section, span {
 html {
   font-size: 62.5%; }
 
-body, button, div, h1, h2, h3, input, nav, p, span, textarea, ul {
+body,
+button,
+div,
+h1,
+h2,
+h3,
+input,
+nav,
+p,
+span,
+textarea,
+ul {
   border: 0;
   margin: 0;
   padding: 0;
   border-radius: 0;
   box-sizing: border-box; }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   cursor: pointer; }
 
 button:focus {
@@ -94,10 +112,10 @@ section h2 {
   z-index: 1;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -200vw;
   height: 100vh;
   width: 100vw;
-  transition: .5s; }
+  transition: 0.5s; }
   .contact-form-wrap form {
     position: relative;
     display: flex;
@@ -108,7 +126,7 @@ section h2 {
     padding-top: 6rem;
     background-color: #eee;
     box-shadow: 0 5px 10px -5px black;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
     color: black; }
     .contact-form-wrap form .close-btn {
       position: absolute;
@@ -124,14 +142,14 @@ section h2 {
       .contact-form-wrap form .close-btn:hover span {
         transform: rotate(180deg); }
       .contact-form-wrap form .close-btn span {
-        transition: .4s; }
+        transition: 0.4s; }
     .contact-form-wrap form h2 {
       position: absolute;
       top: -5rem;
       font: 5rem DinCB;
       width: 25rem;
       text-align: center;
-      border-radius: .4rem;
+      border-radius: 0.4rem;
       margin-bottom: 1.5rem;
       padding: 1rem 2rem;
       color: white;
@@ -146,32 +164,35 @@ section h2 {
       align-items: flex-start;
       font: 2.5rem DinCB;
       color: #666; }
-    .contact-form-wrap form input, .contact-form-wrap form textarea {
+    .contact-form-wrap form input,
+    .contact-form-wrap form textarea {
       width: 30rem;
       height: auto;
       padding: 1rem 0;
       font: 2rem 'Roboto', sans-serif;
       border-bottom: 3px solid #666;
       background: transparent;
-      transition: .2s; }
-      .contact-form-wrap form input:focus, .contact-form-wrap form textarea:focus {
+      transition: 0.2s; }
+      .contact-form-wrap form input:focus,
+      .contact-form-wrap form textarea:focus {
         outline: none;
         border-color: tomato; }
-      .contact-form-wrap form input::placeholder, .contact-form-wrap form textarea::placeholder {
+      .contact-form-wrap form input::placeholder,
+      .contact-form-wrap form textarea::placeholder {
         color: #666; }
     .contact-form-wrap form textarea {
       width: 100%;
       height: 16rem;
       resize: none; }
-    .contact-form-wrap form button[type=submit] {
+    .contact-form-wrap form button[type='submit'] {
       width: 20rem;
       margin-top: 4rem;
       padding: 1.2rem;
-      border-radius: .4rem;
+      border-radius: 0.4rem;
       background-color: #555;
       font: 5rem DinCB;
       color: white; }
-      .contact-form-wrap form button[type=submit]:hover {
+      .contact-form-wrap form button[type='submit']:hover {
         color: tomato; }
 
 .show-form {
@@ -225,6 +246,10 @@ section h2 {
   margin-left: 15vw;
   background-color: #ddd;
   border-bottom-left-radius: 2rem; }
+  @media (max-width: 768px) {
+    .sctn-about {
+      margin: 0;
+      border-radius: 0; } }
 
 .about-text {
   flex-direction: column;
@@ -235,10 +260,14 @@ section h2 {
   font: 1.7rem 'Roboto', sans-serif;
   color: black;
   max-width: 65rem; }
+  @media (max-width: 768px) {
+    .about-text {
+      margin: 6rem 3rem; } }
   .about-text ul {
     width: 100%;
     padding-left: 2rem; }
-  .about-text ul, .about-text p:not(:last-child) {
+  .about-text ul,
+  .about-text p:not(:last-child) {
     margin-bottom: 2rem; }
 
 .sctn-bands {
@@ -287,6 +316,10 @@ section h2 {
   background-color: #ddd;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem; }
+  @media (max-width: 768px) {
+    .sctn-faq {
+      margin: 0;
+      border-radius: 0; } }
 
 .faq-text {
   flex-direction: column;
@@ -296,12 +329,15 @@ section h2 {
   padding: 2.5rem;
   font: 1.7rem 'Roboto', sans-serif;
   color: black; }
+  @media (max-width: 768px) {
+    .faq-text {
+      margin: 6rem 3rem; } }
   .faq-text div {
     flex-direction: column;
     align-items: flex-start; }
     .faq-text div h3 {
       font: bold 2rem 'Roboto', sans-serif;
-      margin-bottom: .5rem; }
+      margin-bottom: 0.5rem; }
     .faq-text div p {
       margin-left: 2rem; }
     .faq-text div:not(:last-child) {

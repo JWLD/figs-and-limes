@@ -2,7 +2,18 @@ html {
   font-size: 62.5%;
 }
 
-body, button, div, h1, h2, h3, input, nav, p, span, textarea, ul {
+body,
+button,
+div,
+h1,
+h2,
+h3,
+input,
+nav,
+p,
+span,
+textarea,
+ul {
   border: 0;
   margin: 0;
   padding: 0;
@@ -10,7 +21,8 @@ body, button, div, h1, h2, h3, input, nav, p, span, textarea, ul {
   box-sizing: border-box;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   cursor: pointer;
 }
 

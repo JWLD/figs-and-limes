@@ -4,8 +4,9 @@ $section-spacing: 10rem;
 $sidebar: 15vw;
 $section-border-radius: 2rem;
 $panel-color: #ddd;
-$landing-shadow: 0 0 2rem .1rem black;
+$landing-shadow: 0 0 2rem 0.1rem black;
 $panel-shadow: 0 5px 10px -5px black;
+$break: 768px;
 
 // MIXINS
 
@@ -15,18 +16,28 @@ $panel-shadow: 0 5px 10px -5px black;
   align-items: center;
 }
 
-a, div, footer, label, nav, section, span {
+a,
+div,
+footer,
+label,
+nav,
+section,
+span {
   @include flex();
 }
 
 @mixin textPanel() {
-	flex-direction: column;
-	align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 
-	max-width: 100rem;
-	margin: $section-spacing;
-	padding: 2.5rem;
+  max-width: 100rem;
+  margin: $section-spacing;
+  padding: 2.5rem;
 
-	font: 1.7rem 'Roboto', sans-serif;
-	color: black;
+  font: 1.7rem 'Roboto', sans-serif;
+  color: black;
+
+  @media (max-width: $break) {
+    margin: 6rem 3rem;
+  }
 }

@@ -1,28 +1,33 @@
 .sctn-faq {
   margin-right: $sidebar;
   background-color: $panel-color;
-	border-top-right-radius: $section-border-radius;
-	border-bottom-right-radius: $section-border-radius;
+  border-top-right-radius: $section-border-radius;
+  border-bottom-right-radius: $section-border-radius;
+
+  @media (max-width: $break) {
+    margin: 0;
+    border-radius: 0;
+  }
 }
 
 .faq-text {
-	@include textPanel;
+  @include textPanel;
 
-	div {
-		flex-direction: column;
-		align-items: flex-start;
+  div {
+    flex-direction: column;
+    align-items: flex-start;
 
     h3 {
       font: bold 2rem 'Roboto', sans-serif;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
-		p {
+    p {
       margin-left: 2rem;
-		}
+    }
 
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
-	}
+  }
 }
