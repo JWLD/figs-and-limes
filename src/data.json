@@ -1,101 +1,109 @@
 {
-	"bands": [
-		{
-			"name": "The 45's",
-			"url": "the-45s",
-			"thumbImg": "45s_1",
-			"subtitle": "Fuzzy Motown",
-			"landingImg": "45s_2",
-			"aboutImg": "45s_1",
-			"blurb": [
-				"The 45's mean business! An international party band that play classic motown, soul and old school R 'n' B but take it up a notch!",
-				"Playing classics by Elvis, Little Richard, Otis Redding and others but with fuzzed up guitars, grooving drums and sweet vocal harmonies.",
-				"The guys play with boatloads of enthusiasm, guaranteed to electrify energetic crowds and incite dancing among the guests."
-			],
-			"watch": {
-				"id": "Bbm800e-Qn4",
-				"caption": "The 45's - <i>These Boots Are Made For Walking</i>",
-				"vidImg": "45s_5"
-			}
-		},
-		{
-			"name": "Cassettes In The Sun",
-			"url": "cassettes-in-the-sun",
-			"thumbImg": "cassettes_1",
-			"subtitle": "Retro Indie Rock",
-			"landingImg": "cassettes_1",
-			"aboutImg": "cassettes_2",
-			"blurb": [
-				"Cassettes In The Sun have an outstanding live show where you, your family and all your friends will be captured from the very beginning. You'll have no excuse not to get involved as every track is a chart topping anthem!",
-				"Band members have hit the Top 40 singles chart, played Top of The Pops and MTV, had airplay on BBC Radio 1, 2 and 6 Music and have toured arenas across the USA and Europe supporting bands including The Killers, Stereophonics, Snow Patrol, Keane, Ash and The Smashing Pumpkins.",
-				"Playing the best indie classics with an edge, Cassettes In The Sun are the perfect alternative twist on a rocked up function band."
-			],
-			"listen": {
-				"src": "cassettes",
-				"title": "Chelsea Dagger"
-			}
-		},
-		{
-			"name": "The Hucklebuck",
-			"url": "the-hucklebuck",
-			"thumbImg": "hucklebuck_2",
-			"subtitle": "Dirty Blues",
-			"landingImg": "hucklebuck_2",
-			"aboutImg": "hucklebuck_1",
-			"blurb": [
-				"The Hucklebuck are a no nonsense blues band playing original interpretations of straight ahead, early jump blues, authentic Texas and Chicago material.",
-				"Collectively the band has played with some incredible roots bands and musicians such as: Pee Wee Ellis, Martha High, Andy Sheppard, Rodriguez, Phantom Limb, Marc Ford, Lillian Boutte etc.",
-				"The Hucklebuck evolved out of their desire to hear blues music being played the way they'd want to hear it - swinging, dynamic, melodic and full of bold statements."
-			],
-			"watch": {
-				"id": "yb8r1B83Bw0",
-				"caption": "The Hucklebuck - <i>Please Love Me</i>",
-				"vidImg": "hucklebuck_3"
-			}
-		},
-		{
-			"name": "Soulsters",
-			"url": "soulsters",
-			"thumbImg": "soulsters_1",
-			"subtitle": "Pop Funk 'n' Soul",
-			"landingImg": "soulsters_1",
-			"aboutImg": "soulsters_2",
-			"blurb": [
-				"Soulsters are a professional 8 piece Pop, Soul, Funk and Motown covers band, featuring some of the busiest and best musicians in the South West",
-				"They pride themselves on their eclectic repertoire, and the energy and musicianship that is put into every performance.",
-				"Having collectively performed at hundreds of weddings and functions with countless other bands, Soulsters came together to build on all their experiences and focus on music that they were passionate about."
-			],
-			"watch": {
-				"id": "XSTSj1UEV_k",
-				"caption": "Soulsters - <i>Wedding & Function Band</i>",
-				"vidImg": "soulsters_4"
-			}
-		}
-	],
-	"faqs": [
-		{
-			"q": "What's the general process for booking an act?",
-			"a": "Browse through our website, pick the band for you and then send us an email with the event information! Easy."
-		},
-		{
-			"q": "Can I make a deposit to secure the act?",
-			"a": "Yes, after we've confirmed the act's availability, a deposit will be needed to secure the act for your event."
-		},
-		{
-			"q": "Can I speak to the act before the event?",
-			"a": "Yes, we'll arrange for one of the band members to give you a call around a month before your event, to say hello and confirm any details. It is possible to speak to the band before this call, just send us an email and we'll organise it."
-		},
-		{
-			"q": "Can I see the act perform before I book?",
-			"a": "Some of the acts occasionally play public gigs / perform in public. When you enquire we'll let you know of any upcoming performances."
-		},
-		{
-			"q": "I'm planning an event abroad. Are your acts available outside of the UK?",
-			"a": "Our acts are available worldwide. If you wish to book an act for an event abroad, we advise you contact us with as much notice as possible to ensure that travel, accommodation and other details can be arranged in good time."
-		},
-		{
-			"q": "I'm interested in booking one of your acts for a residency, is this possible?",
-			"a": "Some of our acts are willing to do short term residencies in worldwide locations. As above, we recommend you contact us early to ensure your best chance of securing the act's availability."
-		}
-	]
+  "bands": [
+    {
+      "name": "The 45's",
+      "url": "the-45s",
+      "thumbImg": "45s_1",
+      "subtitle": "Fuzzy Motown",
+      "landingImg": "45s_2",
+      "aboutImg": "45s_1",
+      "blurb": [
+        "The 45's mean business! An international party band that play classic motown, soul and old school R 'n' B but take it up a notch!",
+        "Playing classics by Elvis, Little Richard, Otis Redding and others but with fuzzed up guitars, grooving drums and sweet vocal harmonies.",
+        "The guys play with boatloads of enthusiasm, guaranteed to electrify energetic crowds and incite dancing among the guests."
+      ],
+      "watch": {
+        "id": "Bbm800e-Qn4",
+        "caption": "The 45's - <i>These Boots Are Made For Walking</i>",
+        "vidImg": "45s_5"
+      }
+    },
+    {
+      "name": "Cassettes In The Sun",
+      "url": "cassettes-in-the-sun",
+      "thumbImg": "cassettes_1",
+      "subtitle": "Retro Indie Rock",
+      "landingImg": "cassettes_1",
+      "aboutImg": "cassettes_2",
+      "blurb": [
+        "Cassettes In The Sun have an outstanding live show where you, your family and all your friends will be captured from the very beginning. You'll have no excuse not to get involved as every track is a chart topping anthem!",
+        "Band members have hit the Top 40 singles chart, played Top of The Pops and MTV, had airplay on BBC Radio 1, 2 and 6 Music and have toured arenas across the USA and Europe supporting bands including The Killers, Stereophonics, Snow Patrol, Keane, Ash and The Smashing Pumpkins.",
+        "Playing the best indie classics with an edge, Cassettes In The Sun are the perfect alternative twist on a rocked up function band."
+      ],
+      "listen": {
+        "src": "cassettes",
+        "title": "Chelsea Dagger"
+      }
+    },
+    {
+      "name": "The Hucklebuck",
+      "url": "the-hucklebuck",
+      "thumbImg": "hucklebuck_2",
+      "subtitle": "Swinging Blues",
+      "landingImg": "hucklebuck_2",
+      "aboutImg": "hucklebuck_1",
+      "blurb": [
+        "The Hucklebuck are a no nonsense blues band playing original interpretations of straight ahead, early jump blues, authentic Texas and Chicago material.",
+        "Collectively the band has played with some incredible roots bands and musicians such as: Pee Wee Ellis, Martha High, Andy Sheppard, Rodriguez, Phantom Limb, Marc Ford, Lillian Boutte etc.",
+        "The Hucklebuck evolved out of their desire to hear blues music being played the way they'd want to hear it - swinging, dynamic, melodic and full of bold statements."
+      ],
+      "watch": {
+        "id": "yb8r1B83Bw0",
+        "caption": "The Hucklebuck - <i>Please Love Me</i>",
+        "vidImg": "hucklebuck_3"
+      }
+    },
+    {
+      "name": "Soulsters",
+      "url": "soulsters",
+      "thumbImg": "soulsters_1",
+      "subtitle": "Pop Funk 'n' Soul",
+      "landingImg": "soulsters_1",
+      "aboutImg": "soulsters_2",
+      "blurb": [
+        "Soulsters are a professional 8 piece Pop, Soul, Funk and Motown covers band, featuring some of the busiest and best musicians in the South West",
+        "They pride themselves on their eclectic repertoire, and the energy and musicianship that is put into every performance.",
+        "Having collectively performed at hundreds of weddings and functions with countless other bands, Soulsters came together to build on all their experiences and focus on music that they were passionate about."
+      ],
+      "watch": {
+        "id": "XSTSj1UEV_k",
+        "caption": "Soulsters - <i>Wedding & Function Band</i>",
+        "vidImg": "soulsters_4"
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the general process for booking an act?",
+      "a":
+        "Browse through our website, pick the band for you and then send us an email with the event information! Easy."
+    },
+    {
+      "q": "Can I make a deposit to secure the act?",
+      "a":
+        "Yes, after we've confirmed the act's availability, a deposit will be needed to secure the act for your event."
+    },
+    {
+      "q": "Can I speak to the act before the event?",
+      "a":
+        "Yes, we'll arrange for one of the band members to give you a call around a month before your event, to say hello and confirm any details. It is possible to speak to the band before this call, just send us an email and we'll organise it."
+    },
+    {
+      "q": "Can I see the act perform before I book?",
+      "a":
+        "Some of the acts occasionally play public gigs / perform in public. When you enquire we'll let you know of any upcoming performances."
+    },
+    {
+      "q":
+        "I'm planning an event abroad. Are your acts available outside of the UK?",
+      "a":
+        "Our acts are available worldwide. If you wish to book an act for an event abroad, we advise you contact us with as much notice as possible to ensure that travel, accommodation and other details can be arranged in good time."
+    },
+    {
+      "q":
+        "I'm interested in booking one of your acts for a residency, is this possible?",
+      "a":
+        "Some of our acts are willing to do short term residencies in worldwide locations. As above, we recommend you contact us early to ensure your best chance of securing the act's availability."
+    }
+  ]
 }
