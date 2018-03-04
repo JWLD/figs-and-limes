@@ -3,41 +3,46 @@ body {
 }
 
 section h2 {
-	font: 7rem DinCB;
-	margin-bottom: 1.5rem;
+  font: 7rem DinCB;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: $break) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .nav-btn {
-	position: fixed;
-	z-index: 1;
+  position: fixed;
+  z-index: 1;
 
-	width: 5rem;
-	height: 5rem;
-	margin: 2rem;
-	border-radius: .4rem;
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem;
+  border-radius: 0.4rem;
 
-	color: white;
-	background-color: black;
+  color: white;
+  background-color: black;
 
-	transition: .15s;
+  transition: 0.15s;
 
-	i {
-		font-size: 3rem;
-	}
+  i {
+    font-size: 3rem;
+  }
 
-	&:hover {
-		transform: scale(1.1);
-	}
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .top {
-	right: 0;
-	bottom: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .home {
-	right: 0;
-	top: 0;
+  right: 0;
+  top: 0;
 }
 
 .shrink {

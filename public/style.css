@@ -81,6 +81,10 @@ body {
 section h2 {
   font: 7rem DinCB;
   margin-bottom: 1.5rem; }
+  @media (max-width: 768px) {
+    section h2 {
+      margin-left: auto;
+      margin-right: auto; } }
 
 .nav-btn {
   position: fixed;
@@ -88,10 +92,10 @@ section h2 {
   width: 5rem;
   height: 5rem;
   margin: 2rem;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   color: white;
   background-color: black;
-  transition: .15s; }
+  transition: 0.15s; }
   .nav-btn i {
     font-size: 3rem; }
   .nav-btn:hover {
@@ -262,7 +266,7 @@ section h2 {
   max-width: 65rem; }
   @media (max-width: 768px) {
     .about-text {
-      margin: 6rem 3rem; } }
+      margin: 6rem 0; } }
   .about-text ul {
     width: 100%;
     padding-left: 2rem; }
@@ -284,10 +288,13 @@ section h2 {
     height: 22rem;
     width: 49.5rem;
     margin: 2rem;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     color: white;
     background-color: #4a4a4a;
     box-shadow: 0 5px 10px -5px black; }
+    .bands-wrap a:hover .band-info {
+      width: 27.5rem;
+      font-size: 3rem; }
     .bands-wrap a .band-thumbImg {
       flex-grow: 1;
       height: 100%;
@@ -296,7 +303,7 @@ section h2 {
     .bands-wrap a .band-info {
       flex-direction: column;
       width: 22rem;
-      transition: .3s;
+      transition: 0.3s;
       padding: 2.5rem; }
       .bands-wrap a .band-info span:first-child {
         height: 100%;
@@ -307,9 +314,24 @@ section h2 {
       .bands-wrap a .band-info span:last-child {
         margin-top: 1rem;
         font: 2rem DinCL; }
-    .bands-wrap a:hover .band-info {
-      width: 27.5rem;
-      font-size: 3rem; }
+
+@media (max-width: 540px) {
+  .bands-wrap a {
+    flex-direction: column;
+    width: 90vw;
+    height: auto; }
+    .bands-wrap a .band-thumbImg {
+      height: 20rem;
+      width: 100%;
+      background-position: top; }
+    .bands-wrap a .band-info {
+      height: 12rem;
+      width: 100% !important; }
+      .bands-wrap a .band-info span {
+        max-width: 100% !important; }
+      .bands-wrap a .band-info span:first-child {
+        width: 90%;
+        height: 3rem; } }
 
 .sctn-faq {
   margin-right: 15vw;
@@ -331,7 +353,7 @@ section h2 {
   color: black; }
   @media (max-width: 768px) {
     .faq-text {
-      margin: 6rem 3rem; } }
+      margin: 6rem 0; } }
   .faq-text div {
     flex-direction: column;
     align-items: flex-start; }

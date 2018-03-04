@@ -1,61 +1,89 @@
 $tileHeight: 22rem;
 
 .sctn-bands {
-	flex-direction: column;
+  flex-direction: column;
 
-	h2 {
-		color: white;
-		margin-top: $section-spacing;
-	}
+  h2 {
+    color: white;
+    margin-top: $section-spacing;
+  }
 }
 
 .bands-wrap {
-	flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-bottom: $section-spacing;
 
-	a {
-		overflow: hidden;
-		height: $tileHeight;
-		width: $tileHeight * 2.25;
-		margin: 2rem;
+  a {
+    overflow: hidden;
+    height: $tileHeight;
+    width: $tileHeight * 2.25;
+    margin: 2rem;
 
-		border-radius: .4rem;
-		color: white;
-		background-color: #4a4a4a;
-		box-shadow: $panel-shadow;
+    border-radius: 0.4rem;
+    color: white;
+    background-color: #4a4a4a;
+    box-shadow: $panel-shadow;
 
-		.band-thumbImg {
-			flex-grow: 1;
-			height: 100%;
+    &:hover .band-info {
+      width: $tileHeight * 1.25;
+      font-size: 3rem;
+    }
 
-			background-size: cover;
-			background-position: center;
-		}
+    .band-thumbImg {
+      flex-grow: 1;
+      height: 100%;
 
-		.band-info {
-			flex-direction: column;
-			width: $tileHeight;
-			transition: .3s;
-			padding: 2.5rem;
+      background-size: cover;
+      background-position: center;
+    }
 
-			span:first-child {
-				height: 100%;
-				max-width: $tileHeight - 5rem;
+    .band-info {
+      flex-direction: column;
+      width: $tileHeight;
+      transition: 0.3s;
+      padding: 2.5rem;
 
-				text-align: center;
-				font: 3rem DinCM;
-				text-transform: uppercase;
-			}
+      span:first-child {
+        height: 100%;
+        max-width: $tileHeight - 5rem;
 
-			span:last-child {
-				margin-top: 1rem;
-				font: 2rem DinCL;
-			}
-		}
+        text-align: center;
+        font: 3rem DinCM;
+        text-transform: uppercase;
+      }
 
-		&:hover .band-info {
-			width: $tileHeight * 1.25;
-			font-size: 3rem;
-		}
-	}
+      span:last-child {
+        margin-top: 1rem;
+        font: 2rem DinCL;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .bands-wrap a {
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+
+    .band-thumbImg {
+      height: 20rem;
+      width: 100%;
+      background-position: top;
+    }
+
+    .band-info {
+      height: 12rem;
+      width: 100% !important;
+
+      span {
+        max-width: 100% !important;
+      }
+
+      span:first-child {
+        width: 90%;
+        height: 3rem;
+      }
+    }
+  }
 }
