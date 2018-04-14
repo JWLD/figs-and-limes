@@ -511,8 +511,14 @@ footer {
     text-transform: uppercase; }
   footer span {
     margin: 0 3rem; }
+    @media (max-width: 1000px) {
+      footer span {
+        display: none; } }
   footer a {
     width: 13rem;
     margin: 0 1rem;
     padding: 0.5rem 0;
     background-color: #222; }
+  @media (max-width: 540px) {
+    footer {
+      display: none; } }

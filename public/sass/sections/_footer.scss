@@ -11,6 +11,10 @@ footer {
 
   span {
     margin: 0 3rem;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 
   a {
@@ -18,5 +22,9 @@ footer {
     margin: 0 1rem;
     padding: 0.5rem 0;
     background-color: #222;
+  }
+
+  @media (max-width: $break2) {
+    display: none;
   }
 }
