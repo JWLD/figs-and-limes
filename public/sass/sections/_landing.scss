@@ -1,31 +1,47 @@
 .sctn-landing {
-	position: relative;
-	flex-direction: column;
+  position: relative;
+  flex-direction: column;
   height: 100vh;
 
-	background-image: url('/pics/landing.jpg');
-	background-size: cover;
-	background-position: center;
+  background-image: url('/pics/landing.jpg');
+  background-size: cover;
+  background-position: center;
 
-	box-shadow: $landing-shadow;
+  box-shadow: $landing-shadow;
 }
 
 .landing-text {
-	flex-direction: column;
-	position: absolute;
-	left: 0;
-	bottom: 0;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 
-	margin: 4vw;
-	padding: 3rem 4rem;
+  margin: 4vw;
+  padding: 3rem 4rem;
 
-	h1 {
-		position: relative;
-		margin: 0 -.75rem;
+  @media (max-width: $break2) {
+    height: 100%;
+    margin: 0;
+  }
+
+  h1 {
+    position: relative;
+    margin: 0 -0.75rem;
     color: white;
-		font: 15rem DinCB;
+    font: 15rem DinCB;
     text-transform: uppercase;
-	}
+
+    @media (max-width: 800px) {
+      font-size: 12rem;
+    }
+
+    @media (max-width: $break2) {
+      margin-bottom: 6rem;
+      font-size: 12rem;
+      line-height: 11rem;
+    }
+  }
 
   span {
     align-self: flex-end;
@@ -36,28 +52,32 @@
     text-transform: uppercase;
   }
 
-	nav {
-		margin-top: 3rem;
-		width: 100%;
+  nav {
+    margin-top: 3rem;
+    width: 100%;
 
-		a {
-			flex-grow: 1;
-			flex-basis: 0;
+    a {
+      flex-grow: 1;
+      flex-basis: 0;
 
-			padding: .6rem 0;
-			border: .3rem solid white;
+      padding: 0.6rem 0;
+      border: 0.3rem solid white;
 
-			font: 3rem DinCR;
-			text-transform: uppercase;
-			color: white;
+      font: 3rem DinCR;
+      text-transform: uppercase;
+      color: white;
 
-			&:not(:last-child) {
-				margin-right: 2rem;
-			}
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
 
-			&:hover {
-				background-color: rgba(255, 255, 255, .15);
-			}
-		}
-	}
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+    }
+
+    @media (max-width: $break2) {
+      display: none;
+    }
+  }
 }
