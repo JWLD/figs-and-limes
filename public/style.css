@@ -128,7 +128,7 @@ section h2 {
     padding: 4rem;
     padding-top: 6rem;
     background-color: #eee;
-    box-shadow: 0 5px 10px -5px black;
+    box-shadow: 0 0.5rem 1rem -0.5rem black;
     border-radius: 0.6rem;
     color: black; }
     .contact-form-wrap form .close-btn {
@@ -138,7 +138,7 @@ section h2 {
       height: 5rem;
       width: 5rem;
       border-radius: 100%;
-      box-shadow: 0 5px 10px -5px black;
+      box-shadow: 0 0.5rem 1rem -0.5rem black;
       background-color: #555;
       color: white;
       font-size: 2.4rem; }
@@ -309,7 +309,7 @@ section h2 {
     border-radius: 0.4rem;
     color: white;
     background-color: #4a4a4a;
-    box-shadow: 0 5px 10px -5px black; }
+    box-shadow: 0 0.5rem 1rem -0.5rem black; }
     .bands-wrap a:hover .band-info {
       width: 27.5rem;
       font-size: 3rem; }
@@ -404,6 +404,14 @@ section h2 {
     width: 110rem;
     margin-bottom: 10rem;
     justify-content: space-between; }
+    @media (max-width: 1175px) {
+      .band-page > div {
+        width: 100%;
+        padding: 5rem;
+        margin-bottom: 2rem; } }
+    @media (max-width: 540px) {
+      .band-page > div {
+        padding: 2rem; } }
   .band-page h2 {
     width: 100%;
     margin-bottom: 1.5rem;
@@ -424,7 +432,12 @@ section h2 {
       background-color: rgba(0, 0, 0, 0.7);
       color: white;
       font: 5.5vw DinCB;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: center; }
+      @media (max-width: 768px) {
+        .band-page .band-landing h1 {
+          width: calc(100% - 4rem);
+          font-size: 10vw; } }
   .band-page .band-about {
     align-items: flex-start;
     font: 2.25rem DinCR; }
@@ -435,13 +448,30 @@ section h2 {
       .band-page .band-about div:first-child p:not(:last-child) {
         margin-bottom: 2rem; }
     .band-page .band-about div:last-child {
+      max-width: 90vw;
       min-width: 40rem;
       height: 30rem;
       margin-left: 4rem;
-      box-shadow: 0 5px 10px -5px black;
-      border-radius: .3rem;
+      box-shadow: 0 0.5rem 1rem -0.5rem black;
+      border-radius: 0.3rem;
       background-size: cover;
       background-position: center; }
+      @media (max-width: 1175px) {
+        .band-page .band-about div:last-child {
+          width: 50rem;
+          min-width: 0;
+          height: 35rem;
+          margin-top: 4rem;
+          margin-left: 0; } }
+      @media (max-width: 540px) {
+        .band-page .band-about div:last-child {
+          height: 25rem;
+          width: calc(100vw - 2rem); } }
+    @media (max-width: 1175px) {
+      .band-page .band-about {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0; } }
   .band-page .band-listen {
     flex-direction: column; }
     .band-page .band-listen div {
@@ -454,19 +484,31 @@ section h2 {
         width: 100%;
         margin-top: 1rem;
         font: 2.25rem DinCR; }
+    @media (max-width: 1175px) {
+      .band-page .band-listen {
+        padding-bottom: 0; } }
   .band-page .band-watch {
     flex-direction: column; }
+    @media (max-width: 1175px) {
+      .band-page .band-watch {
+        padding-bottom: 0; } }
     .band-page .band-watch .video-wrap {
       position: relative;
       overflow: hidden;
       height: 50rem;
       width: 100%;
-      border-radius: .3rem;
-      box-shadow: 0 5px 10px -5px black;
+      border-radius: 0.3rem;
+      box-shadow: 0 0.5rem 1rem -0.5rem black;
       background-image: url("/pics/bands/45s_1.jpg");
       background-size: cover; }
       .band-page .band-watch .video-wrap:hover .overlay {
         opacity: 1; }
+      @media (max-width: 900px) {
+        .band-page .band-watch .video-wrap {
+          height: 40rem; } }
+      @media (max-width: 540px) {
+        .band-page .band-watch .video-wrap {
+          height: 30rem; } }
       .band-page .band-watch .video-wrap > i {
         position: absolute;
         top: 0;
@@ -474,7 +516,7 @@ section h2 {
         width: 8rem;
         height: 5rem;
         margin: 1rem;
-        border-radius: .75rem;
+        border-radius: 0.75rem;
         background-color: rgba(0, 0, 0, 0.7);
         color: gray;
         font-size: 5rem; }
@@ -486,7 +528,13 @@ section h2 {
         width: 100%;
         height: 50rem;
         background-color: black;
-        transition: .3s; }
+        transition: 0.3s; }
+        @media (max-width: 900px) {
+          .band-page .band-watch .video-wrap iframe {
+            height: 40rem; } }
+        @media (max-width: 540px) {
+          .band-page .band-watch .video-wrap iframe {
+            height: 30rem; } }
       .band-page .band-watch .video-wrap .activate {
         top: 0; }
       .band-page .band-watch .video-wrap .overlay {
@@ -501,21 +549,27 @@ section h2 {
         padding: 1.5rem 2rem;
         background-color: rgba(0, 0, 0, 0.7);
         opacity: 0;
-        transition: .2s; }
+        transition: 0.2s; }
         .band-page .band-watch .video-wrap .overlay span {
           color: white;
           font: 2.25rem DinCR; }
+          @media (max-width: 540px) {
+            .band-page .band-watch .video-wrap .overlay span {
+              font-size: 1.75rem; } }
   .band-page .band-book {
     justify-content: center; }
     .band-page .band-book a {
       width: 30rem;
       padding: 2.5rem 3rem;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       background-color: #222;
-      box-shadow: 0 5px 10px -5px black;
+      box-shadow: 0 0.5rem 1rem -0.5rem black;
       color: white;
       font: 5rem DinCM;
       text-transform: uppercase; }
+    @media (max-width: 540px) {
+      .band-page .band-book {
+        margin: 0; } }
 
 footer {
   height: 9rem; }
