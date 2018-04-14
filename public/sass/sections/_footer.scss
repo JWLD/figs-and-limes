@@ -1,9 +1,22 @@
 footer {
   height: 9rem;
 
-  span {
+  span,
+  a {
+    border-radius: 0.6rem;
     font: 3rem DinCB;
-    text-transform: uppercase;
     color: white;
+    text-transform: uppercase;
+  }
+
+  span {
+    margin: 0 3rem;
+  }
+
+  a {
+    width: 13rem;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    background-color: #222;
   }
 }
