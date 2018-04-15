@@ -9,6 +9,13 @@ $panel-shadow: 0 0.5rem 1rem -0.5rem black;
 $break1: 768px;
 $break2: 540px;
 
+// Z-INDEX
+
+$navBtnZIndex: 1;
+$contactFormZIndex: 3;
+$iFrameZIndex: 2;
+$mobileMenuZIndex: 4;
+
 // MIXINS
 
 @mixin flex() {

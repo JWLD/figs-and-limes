@@ -14,6 +14,19 @@
     }
   })
 
+  // toggle mobile menu
+  var mobileBtn = document.getElementById('mobile-btn')
+  var mobileBtnClose = document.getElementById('mobile-btn-close')
+  var mobileMenu = document.getElementById('mobile-menu')
+
+  mobileBtn.addEventListener('click', function() {
+    mobileMenu.classList.remove('hide')
+  })
+
+  mobileBtnClose.addEventListener('click', function() {
+    mobileMenu.classList.add('hide')
+  })
+
   // load video
   var videos = document.querySelectorAll('.video-wrap')
 

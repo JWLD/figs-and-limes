@@ -118,11 +118,23 @@ section h2 {
     .mobile {
       display: none; } }
 
+.mobile-close {
+  top: 0;
+  right: 0;
+  background-color: white;
+  color: black; }
+  @media (min-width: 540px) {
+    .mobile-close {
+      display: none; } }
+
 .shrink {
   transform: scale(0); }
 
+.hide {
+  display: none; }
+
 .contact-form-wrap {
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   top: 0;
   left: -200vw;
@@ -210,6 +222,15 @@ section h2 {
 
 .show-form {
   left: 0; }
+
+.mobile-menu {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black; }
 
 .sctn-landing {
   position: relative;
@@ -535,7 +556,7 @@ section h2 {
         position: absolute;
         top: 100%;
         left: 0;
-        z-index: 1;
+        z-index: 2;
         width: 100%;
         height: 50rem;
         background-color: black;
