@@ -205,24 +205,32 @@ section h2 {
           position: static;
           transform: none;
           width: 100%;
-          font-size: 4rem;
+          font-size: 3rem;
           background-color: #888; } }
+      @media (max-height: 640px) {
+        .contact-form-wrap form h2 {
+          margin-bottom: 0.5rem; } }
     .contact-form-wrap form > div:not(:last-child) {
       margin-bottom: 2rem; }
       .contact-form-wrap form > div:not(:last-child) input:first-child {
         margin-right: 3rem; }
-        @media (max-width: 775px) {
+        @media (min-height: 640px) and (max-width: 775px) {
           .contact-form-wrap form > div:not(:last-child) input:first-child {
             flex-grow: 1;
             margin: 0; } }
-      @media (max-width: 775px) {
+      @media (min-height: 640px) and (max-width: 775px) {
         .contact-form-wrap form > div:not(:last-child) {
           flex-direction: column;
-          width: 100%;
+          width: 100%; } }
+      @media (max-width: 775px) {
+        .contact-form-wrap form > div:not(:last-child) {
           margin: 0; } }
       @media (max-width: 775px) {
         .contact-form-wrap form > div:not(:last-child) input {
           height: 8vh; } }
+      @media (max-height: 640px) {
+        .contact-form-wrap form > div:not(:last-child) input {
+          height: 10vh; } }
     .contact-form-wrap form label {
       flex-direction: column;
       align-items: flex-start;
@@ -249,6 +257,11 @@ section h2 {
         .contact-form-wrap form textarea {
           flex-grow: 1;
           width: 100%; } }
+      @media (max-height: 640px) {
+        .contact-form-wrap form input,
+        .contact-form-wrap form textarea {
+          font-size: 1.75rem;
+          padding: 0.5rem 0; } }
     .contact-form-wrap form textarea {
       width: 100%;
       height: 16rem;
@@ -270,7 +283,10 @@ section h2 {
         .contact-form-wrap form button[type='submit'] {
           width: 100%;
           margin-top: 2rem;
-          font-size: 4rem; } }
+          font-size: 3rem; } }
+      @media (max-height: 640px) {
+        .contact-form-wrap form button[type='submit'] {
+          margin-top: 1.5rem; } }
 
 .show-form {
   left: 0; }

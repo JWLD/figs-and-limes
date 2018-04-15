@@ -83,8 +83,12 @@ $formBreak: 775px;
         position: static;
         transform: none;
         width: 100%;
-        font-size: 4rem;
+        font-size: 3rem;
         background-color: #888;
+      }
+
+      @media (max-height: 640px) {
+        margin-bottom: 0.5rem;
       }
     }
 
@@ -94,21 +98,28 @@ $formBreak: 775px;
       input:first-child {
         margin-right: $formSpacing * 1.5;
 
-        @media (max-width: $formBreak) {
+        @media (min-height: 640px) and (max-width: $formBreak) {
           flex-grow: 1;
           margin: 0;
         }
       }
 
-      @media (max-width: $formBreak) {
+      @media (min-height: 640px) and (max-width: $formBreak) {
         flex-direction: column;
         width: 100%;
+      }
+
+      @media (max-width: $formBreak) {
         margin: 0;
       }
 
       input {
         @media (max-width: $formBreak) {
           height: 8vh;
+        }
+
+        @media (max-height: 640px) {
+          height: 10vh;
         }
       }
     }
@@ -143,6 +154,11 @@ $formBreak: 775px;
         flex-grow: 1;
         width: 100%;
       }
+
+      @media (max-height: 640px) {
+        font-size: 1.75rem;
+        padding: 0.5rem 0;
+      }
     }
 
     textarea {
@@ -172,7 +188,11 @@ $formBreak: 775px;
       @media (max-width: $formBreak) {
         width: 100%;
         margin-top: 2rem;
-        font-size: 4rem;
+        font-size: 3rem;
+      }
+
+      @media (max-height: 640px) {
+        margin-top: 1.5rem;
       }
     }
   }
