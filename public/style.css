@@ -107,6 +107,16 @@ section h2 {
 .home {
   right: 0;
   top: 0; }
+  @media (max-width: 540px) {
+    .home {
+      display: none; } }
+
+.mobile {
+  top: 0;
+  right: 0; }
+  @media (min-width: 540px) {
+    .mobile {
+      display: none; } }
 
 .shrink {
   transform: scale(0); }
