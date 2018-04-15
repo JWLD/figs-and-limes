@@ -33,7 +33,8 @@
     text-transform: uppercase;
 
     @media (max-width: 800px) {
-      font-size: 12rem;
+      font-size: 18vw;
+      margin-bottom: 1vw;
     }
 
     @media (max-width: $break2) {

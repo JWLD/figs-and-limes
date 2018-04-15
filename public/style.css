@@ -322,7 +322,8 @@ section h2 {
     text-transform: uppercase; }
     @media (max-width: 800px) {
       .landing-text h1 {
-        font-size: 12rem; } }
+        font-size: 18vw;
+        margin-bottom: 1vw; } }
     @media (max-width: 540px) {
       .landing-text h1 {
         margin-bottom: 6rem;
