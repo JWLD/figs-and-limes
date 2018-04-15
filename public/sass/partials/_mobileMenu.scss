@@ -1,4 +1,5 @@
 .mobile-menu {
+  flex-direction: column;
   z-index: $mobileMenuZIndex;
   position: fixed;
   top: 0;
@@ -6,4 +7,11 @@
   height: 100vh;
   width: 100vw;
   background-color: black;
+
+  a:not(:first-child) {
+    margin: 1rem 0;
+    font: 5rem DinCB;
+    color: white;
+    text-transform: uppercase;
+  }
 }

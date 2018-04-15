@@ -18,6 +18,7 @@
   var mobileBtn = document.getElementById('mobile-btn')
   var mobileBtnClose = document.getElementById('mobile-btn-close')
   var mobileMenu = document.getElementById('mobile-menu')
+  var mobileLinks = Array.from(document.getElementsByClassName('mobile-link'))
 
   mobileBtn.addEventListener('click', function() {
     mobileMenu.classList.remove('hide')
@@ -25,6 +26,12 @@
 
   mobileBtnClose.addEventListener('click', function() {
     mobileMenu.classList.add('hide')
+  })
+
+  mobileLinks.forEach(function(mobileLink) {
+    mobileLink.addEventListener('click', function() {
+      mobileMenu.classList.add('hide')
+    })
   })
 
   // load video
