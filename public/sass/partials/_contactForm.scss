@@ -68,7 +68,7 @@ $formBreak: 775px;
 
     h2 {
       position: absolute;
-      top: -5rem;
+      top: -3.5rem;
       font: 5rem DinCB;
       width: 25rem;
       text-align: center;
@@ -77,7 +77,7 @@ $formBreak: 775px;
       padding: 1rem 2rem;
       color: white;
       background-color: #555;
-      transform: rotate(4deg);
+      transform: rotate(3deg);
 
       @media (max-width: $formBreak) {
         position: static;

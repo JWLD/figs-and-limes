@@ -190,7 +190,7 @@ section h2 {
         transition: 0.4s; }
     .contact-form-wrap form h2 {
       position: absolute;
-      top: -5rem;
+      top: -3.5rem;
       font: 5rem DinCB;
       width: 25rem;
       text-align: center;
@@ -199,7 +199,7 @@ section h2 {
       padding: 1rem 2rem;
       color: white;
       background-color: #555;
-      transform: rotate(4deg); }
+      transform: rotate(3deg); }
       @media (max-width: 775px) {
         .contact-form-wrap form h2 {
           position: static;
