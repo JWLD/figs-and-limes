@@ -510,7 +510,8 @@ section h2 {
       border-radius: 0.3rem;
       box-shadow: 0 0.5rem 1rem -0.5rem black;
       background-image: url("/pics/bands/45s_1.jpg");
-      background-size: cover; }
+      background-size: cover;
+      background-position: center; }
       .band-page .band-watch .video-wrap:hover .overlay {
         opacity: 1; }
       @media (max-width: 900px) {

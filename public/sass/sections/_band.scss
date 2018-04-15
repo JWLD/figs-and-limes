@@ -152,6 +152,7 @@ $bandBreak: 1175px;
       box-shadow: $panel-shadow;
       background-image: url('/pics/bands/45s_1.jpg');
       background-size: cover;
+      background-position: center;
 
       &:hover .overlay {
         opacity: 1;
