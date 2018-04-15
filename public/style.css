@@ -47,6 +47,7 @@ html {
 body,
 button,
 div,
+form,
 h1,
 h2,
 h3,
@@ -137,10 +138,15 @@ section h2 {
   z-index: 3;
   position: fixed;
   top: 0;
-  left: -200vw;
+  left: -100vw;
   height: 100vh;
   width: 100vw;
   transition: 0.5s; }
+  @media (max-width: 775px) {
+    .contact-form-wrap {
+      transition: 0;
+      left: 0;
+      padding: 1.5rem; } }
   .contact-form-wrap form {
     position: relative;
     display: flex;
@@ -153,6 +159,15 @@ section h2 {
     box-shadow: 0 0.5rem 1rem -0.5rem black;
     border-radius: 0.6rem;
     color: black; }
+    @media (max-width: 775px) {
+      .contact-form-wrap form {
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 2rem; } }
     .contact-form-wrap form .close-btn {
       position: absolute;
       top: -1.5rem;
@@ -166,6 +181,10 @@ section h2 {
       font-size: 2.4rem; }
       .contact-form-wrap form .close-btn:hover span {
         transform: rotate(180deg); }
+      @media (max-width: 775px) {
+        .contact-form-wrap form .close-btn {
+          top: -0.8rem;
+          right: -0.8rem; } }
       .contact-form-wrap form .close-btn span {
         transition: 0.4s; }
     .contact-form-wrap form h2 {
@@ -180,10 +199,29 @@ section h2 {
       color: white;
       background-color: #555;
       transform: rotate(4deg); }
+      @media (max-width: 775px) {
+        .contact-form-wrap form h2 {
+          position: static;
+          transform: none;
+          width: 100%;
+          font-size: 4rem;
+          background-color: #888; } }
     .contact-form-wrap form > div:not(:last-child) {
       margin-bottom: 2rem; }
       .contact-form-wrap form > div:not(:last-child) input:first-child {
         margin-right: 3rem; }
+        @media (max-width: 775px) {
+          .contact-form-wrap form > div:not(:last-child) input:first-child {
+            flex-grow: 1;
+            margin: 0; } }
+      @media (max-width: 775px) {
+        .contact-form-wrap form > div:not(:last-child) {
+          flex-direction: column;
+          width: 100%;
+          margin: 0; } }
+      @media (max-width: 775px) {
+        .contact-form-wrap form > div:not(:last-child) input {
+          height: 8vh; } }
     .contact-form-wrap form label {
       flex-direction: column;
       align-items: flex-start;
@@ -205,10 +243,18 @@ section h2 {
       .contact-form-wrap form input::placeholder,
       .contact-form-wrap form textarea::placeholder {
         color: #666; }
+      @media (max-width: 775px) {
+        .contact-form-wrap form input,
+        .contact-form-wrap form textarea {
+          flex-grow: 1;
+          width: 100%; } }
     .contact-form-wrap form textarea {
       width: 100%;
       height: 16rem;
       resize: none; }
+      @media (max-width: 775px) {
+        .contact-form-wrap form textarea {
+          height: auto; } }
     .contact-form-wrap form button[type='submit'] {
       width: 20rem;
       margin-top: 4rem;
@@ -219,6 +265,11 @@ section h2 {
       color: white; }
       .contact-form-wrap form button[type='submit']:hover {
         color: tomato; }
+      @media (max-width: 775px) {
+        .contact-form-wrap form button[type='submit'] {
+          width: 100%;
+          margin-top: 2rem;
+          font-size: 4rem; } }
 
 .show-form {
   left: 0; }
