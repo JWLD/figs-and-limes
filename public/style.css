@@ -144,6 +144,7 @@ section h2 {
   transition: 0.5s; }
   @media (max-width: 775px) {
     .contact-form-wrap {
+      display: none;
       transition: 0;
       left: 0;
       padding: 1.5rem; } }
@@ -273,6 +274,9 @@ section h2 {
 
 .show-form {
   left: 0; }
+  @media (max-width: 775px) {
+    .show-form {
+      display: block; } }
 
 .mobile-menu {
   flex-direction: column;
