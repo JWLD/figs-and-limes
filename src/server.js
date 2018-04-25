@@ -44,15 +44,15 @@ app.post('/contact', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'jackwldavies@gmail.com',
+      user: 'figslimes@gmail.com',
       pass: process.env.EMAIL_PASSWORD
     }
   })
 
   const mailOptions = {
-    from: 'jackwldavies@icloud.com',
-    to: 'jackwldavies@icloud.com',
-    subject: 'Testing',
+    from: 'figslimes@gmail.com',
+    to: 'figslimes@gmail.com',
+    subject: 'New Message',
     text: emailString
   }
 
