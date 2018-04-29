@@ -52,14 +52,18 @@
   })
 
   // toggle contact form
+  var toggleContactForm = function() {
+    var formWrap = document.querySelector('#form-wrap')
+    formWrap.classList.toggle('show-form')
+  }
+
   var formToggles = document.querySelectorAll('.form-toggle')
 
   Array.from(formToggles).forEach(toggle => {
     toggle.addEventListener('click', function(e) {
       e.preventDefault()
 
-      var formWrap = document.querySelector('#form-wrap')
-      formWrap.classList.toggle('show-form')
+      toggleContactForm(e)
     })
   })
 
@@ -88,5 +92,7 @@
       xhr.open('POST', '/contact')
       xhr.setRequestHeader('Content-Type', 'application/json')
       xhr.send(JSON.stringify(formValues))
+
+      toggleContactForm()
     })
 })()
