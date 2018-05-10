@@ -249,9 +249,8 @@ section h2 {
       height: auto;
       padding: 1rem 0;
       font: 2rem 'Roboto', sans-serif;
-      border-bottom: 3px solid #666;
-      background: transparent;
-      transition: 0.2s; }
+      border-bottom: 2px solid #666;
+      background: transparent; }
       .contact-form-wrap form input:focus,
       .contact-form-wrap form textarea:focus {
         outline: none;
