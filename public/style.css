@@ -250,14 +250,17 @@ section h2 {
       padding: 1rem 0;
       font: 2rem 'Roboto', sans-serif;
       border-bottom: 2px solid #666;
-      background: transparent; }
+      background: transparent;
+      outline: none; }
       .contact-form-wrap form input:focus,
       .contact-form-wrap form textarea:focus {
-        outline: none;
         border-color: tomato; }
       .contact-form-wrap form input::placeholder,
       .contact-form-wrap form textarea::placeholder {
         color: #666; }
+      .contact-form-wrap form input.invalid::placeholder,
+      .contact-form-wrap form textarea.invalid::placeholder {
+        color: tomato !important; }
       @media (max-width: 775px) {
         .contact-form-wrap form input,
         .contact-form-wrap form textarea {

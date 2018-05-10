@@ -135,14 +135,18 @@ $formBreak: 775px;
       font: 2rem 'Roboto', sans-serif;
       border-bottom: 2px solid #666;
       background: transparent;
+      outline: none;
 
       &:focus {
-        outline: none;
         border-color: tomato;
       }
 
       &::placeholder {
         color: #666;
+      }
+
+      &.invalid::placeholder {
+        color: tomato !important;
       }
 
       @media (max-width: $formBreak) {

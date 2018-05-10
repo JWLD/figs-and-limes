@@ -73,11 +73,41 @@
     })
   })
 
+  var validateForm = function(formElements) {
+    var errors = {}
+
+    var name = formElements.name.value
+    var email = formElements.email.value
+
+    if (!name) {
+      errors.name = true
+    }
+
+    if (!email) {
+      errors.email = true
+    }
+
+    return errors
+  }
+
+  var highlightInvalidFields = function(formErrors) {
+    Object.keys(formErrors).forEach(error => {
+      var invalidField = document.querySelector('input[name="' + error + '"]')
+      invalidField.classList.add('invalid')
+    })
+  }
+
   // send form
   document
     .querySelector('#contact-form')
     .addEventListener('submit', function(e) {
       e.preventDefault()
+
+      const formErrors = validateForm(e.target.elements)
+
+      if (Object.keys(formErrors).length > 0) {
+        return highlightInvalidFields(formErrors)
+      }
 
       var formValues = {}
 
