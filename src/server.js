@@ -49,14 +49,40 @@ app.post('/contact', (req, res) => {
     }
   })
 
-  const mailOptions = {
+  // send email to figslimes
+
+  const figsMailOptions = {
     from: 'figslimes@gmail.com',
     to: 'figslimes@gmail.com',
     subject: 'New Message',
     text: emailString
   }
 
-  transporter.sendMail(mailOptions, function(err, info) {
+  transporter.sendMail(figsMailOptions, function(err, info) {
+    if (err) return console.log(err)
+
+    return res.send(info.response)
+  })
+
+  // send email to customer
+
+  const customerMailOptions = {
+    from: 'figslimes@gmail.com',
+    to: req.body.email,
+    subject: 'Figs & Limes Enquiry',
+    text: `
+      Thanks for your enquiry. We'll be in touch shortly!
+
+      - The Figs & Limes team
+
+
+      www.figsandlimes.com
+
+      Wedding and function band agency - ${new Date().getFullYear()}.
+    `
+  }
+
+  transporter.sendMail(customerMailOptions, function(err, info) {
     if (err) return console.log(err)
 
     return res.send(info.response)
