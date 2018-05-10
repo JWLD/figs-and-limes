@@ -4,18 +4,15 @@ $offBlack: #333;
 $formBreak: 775px;
 
 .contact-form-wrap {
+  display: none;
   z-index: $contactFormZIndex;
   position: fixed;
   top: 0;
-  left: -100vw;
+  left: 0;
   height: 100vh;
   width: 100vw;
-  transition: 0.5s;
 
   @media (max-width: $formBreak) {
-    display: none;
-    transition: 0;
-    left: 0;
     padding: 1.5rem;
   }
 
@@ -199,9 +196,5 @@ $formBreak: 775px;
 }
 
 .show-form {
-  left: 0;
-
-  @media (max-width: $formBreak) {
-    display: block;
-  }
+  display: flex;
 }
