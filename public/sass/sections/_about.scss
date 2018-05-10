@@ -1,6 +1,7 @@
 .sctn-about {
   margin-left: $sidebar;
   background-color: $panel-color;
+  border-top-left-radius: $section-border-radius;
   border-bottom-left-radius: $section-border-radius;
 
   @media (max-width: $break1) {

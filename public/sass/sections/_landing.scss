@@ -2,12 +2,6 @@
   position: relative;
   flex-direction: column;
   height: 100vh;
-
-  background-image: url('/pics/landing.jpg');
-  background-size: cover;
-  background-position: center;
-
-  box-shadow: $landing-shadow;
 }
 
 .landing-text {

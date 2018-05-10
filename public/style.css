@@ -86,6 +86,17 @@ section h2 {
     section h2 {
       margin: 0 auto 3rem auto; } }
 
+.site-background {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/pics/landing.jpg");
+  background-size: cover;
+  background-position: center; }
+
 .nav-btn {
   position: fixed;
   z-index: 1;
@@ -306,11 +317,7 @@ section h2 {
 .sctn-landing {
   position: relative;
   flex-direction: column;
-  height: 100vh;
-  background-image: url("/pics/landing.jpg");
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 2rem 0.1rem black; }
+  height: 100vh; }
 
 .landing-text {
   justify-content: flex-end;
@@ -367,6 +374,7 @@ section h2 {
 .sctn-about {
   margin-left: 15vw;
   background-color: #ddd;
+  border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem; }
   @media (max-width: 768px) {
     .sctn-about {
