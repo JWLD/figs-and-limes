@@ -56,11 +56,11 @@
     var formWrap = document.querySelector('#form-wrap')
     formWrap.classList.toggle('show-form')
 
-    var bandName = document.querySelector('#band-name')
-    var formHeader = bandName.innerHTML || 'Contact'
+    var bandNameElement = document.querySelector('#band-name')
+    var formHeader = bandNameElement ? bandNameElement.innerHTML : 'Contact'
 
-    var formTitle = document.querySelector('#form-title')
-    formTitle.innerHTML = formHeader
+    var formTitleElement = document.querySelector('#form-title')
+    formTitleElement.innerHTML = formHeader
   }
 
   var formToggles = document.querySelectorAll('.form-toggle')
@@ -85,6 +85,11 @@
       formElements.forEach(
         input => (input.name ? (formValues[input.name] = input.value) : null)
       )
+
+      var bandNameElement = document.querySelector('#band-name')
+      formValues.band = bandNameElement
+        ? bandNameElement.innerHTML
+        : 'Sent from homepage'
 
       var data = JSON.stringify(formValues)
 
