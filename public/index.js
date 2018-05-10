@@ -55,6 +55,12 @@
   var toggleContactForm = function() {
     var formWrap = document.querySelector('#form-wrap')
     formWrap.classList.toggle('show-form')
+
+    var bandName = document.querySelector('#band-name')
+    var formHeader = bandName.innerHTML || 'Contact'
+
+    var formTitle = document.querySelector('#form-title')
+    formTitle.innerHTML = formHeader
   }
 
   var formToggles = document.querySelectorAll('.form-toggle')
