@@ -61,22 +61,20 @@ app.post('/contact', (req, res) => {
   transporter.sendMail(figsMailOptions, function(err, info) {
     if (err) return console.log(err)
 
-    return res.send(info.response)
-  })
+    // send email to customer
 
-  // send email to customer
+    const customerMailOptions = {
+      from: 'figslimes@gmail.com',
+      to: req.body.email,
+      subject: 'Figs & Limes Enquiry',
+      text: `Thanks for your enquiry. We'll be in touch shortly!\n\n- The Figs & Limes team\n\n\nwww.figsandlimes.com\n\nWedding and function band agency - ${new Date().getFullYear()}.`
+    }
 
-  const customerMailOptions = {
-    from: 'figslimes@gmail.com',
-    to: req.body.email,
-    subject: 'Figs & Limes Enquiry',
-    text: `Thanks for your enquiry. We'll be in touch shortly!\n- The Figs & Limes team\n\nwww.figsandlimes.com\nWedding and function band agency - ${new Date().getFullYear()}.`
-  }
+    transporter.sendMail(customerMailOptions, function(err, info) {
+      if (err) return console.log(err)
 
-  transporter.sendMail(customerMailOptions, function(err, info) {
-    if (err) return console.log(err)
-
-    return res.send(info.response)
+      return res.sendStatus(200)
+    })
   })
 })
 
