@@ -212,20 +212,20 @@ section h2 {
           position: static;
           transform: none;
           width: 100%;
-          font-size: 3rem;
+          font-size: 2.5rem;
           background-color: #888; } }
-      @media (max-height: 640px) {
+      @media (max-height: 568px) {
         .contact-form-wrap form h2 {
           margin-bottom: 0.5rem; } }
     .contact-form-wrap form > div:not(:last-child) {
       margin-bottom: 2rem; }
       .contact-form-wrap form > div:not(:last-child) input:first-child {
         margin-right: 3rem; }
-        @media (min-height: 640px) and (max-width: 775px) {
+        @media (min-height: 568px) and (max-width: 775px) {
           .contact-form-wrap form > div:not(:last-child) input:first-child {
             flex-grow: 1;
             margin: 0; } }
-      @media (min-height: 640px) and (max-width: 775px) {
+      @media (min-height: 568px) and (max-width: 775px) {
         .contact-form-wrap form > div:not(:last-child) {
           flex-direction: column;
           width: 100%; } }
@@ -235,7 +235,7 @@ section h2 {
       @media (max-width: 775px) {
         .contact-form-wrap form > div:not(:last-child) input {
           height: 8vh; } }
-      @media (max-height: 640px) {
+      @media (max-height: 568px) {
         .contact-form-wrap form > div:not(:last-child) input {
           height: 10vh; } }
     .contact-form-wrap form label {
@@ -265,8 +265,9 @@ section h2 {
         .contact-form-wrap form input,
         .contact-form-wrap form textarea {
           flex-grow: 1;
+          flex-basis: 1;
           width: 100%; } }
-      @media (max-height: 640px) {
+      @media (max-height: 568px) {
         .contact-form-wrap form input,
         .contact-form-wrap form textarea {
           font-size: 1.75rem;
@@ -275,7 +276,7 @@ section h2 {
       width: 100%;
       height: 16rem;
       resize: none; }
-      @media (max-width: 775px) {
+      @media (max-height: 568px) {
         .contact-form-wrap form textarea {
           height: auto; } }
     .contact-form-wrap form button[type='submit'] {
@@ -292,8 +293,8 @@ section h2 {
         .contact-form-wrap form button[type='submit'] {
           width: 100%;
           margin-top: 2rem;
-          font-size: 3rem; } }
-      @media (max-height: 640px) {
+          font-size: 2.5rem; } }
+      @media (max-height: 568px) {
         .contact-form-wrap form button[type='submit'] {
           margin-top: 1.5rem; } }
 

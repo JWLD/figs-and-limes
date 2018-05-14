@@ -1,7 +1,9 @@
 $formSpacing: 2rem;
 $formPadding: 4rem;
 $offBlack: #333;
-$formBreak: 775px;
+
+$formBreakH: 775px;
+$formBreakV: 568px;
 
 .contact-form-wrap {
   display: none;
@@ -12,7 +14,7 @@ $formBreak: 775px;
   height: 100vh;
   width: 100vw;
 
-  @media (max-width: $formBreak) {
+  @media (max-width: $formBreakH) {
     padding: 1.5rem;
   }
 
@@ -27,7 +29,7 @@ $formBreak: 775px;
     border-radius: 0.6rem;
     color: black;
 
-    @media (max-width: $formBreak) {
+    @media (max-width: $formBreakH) {
       justify-content: flex-start;
       align-items: stretch;
       width: 100%;
@@ -53,7 +55,7 @@ $formBreak: 775px;
         transform: rotate(180deg);
       }
 
-      @media (max-width: $formBreak) {
+      @media (max-width: $formBreakH) {
         top: -0.8rem;
         right: -0.8rem;
       }
@@ -75,15 +77,15 @@ $formBreak: 775px;
       background-color: #555;
       transform: rotate(3deg);
 
-      @media (max-width: $formBreak) {
+      @media (max-width: $formBreakH) {
         position: static;
         transform: none;
         width: 100%;
-        font-size: 3rem;
+        font-size: 2.5rem;
         background-color: #888;
       }
 
-      @media (max-height: 640px) {
+      @media (max-height: $formBreakV) {
         margin-bottom: 0.5rem;
       }
     }
@@ -94,27 +96,27 @@ $formBreak: 775px;
       input:first-child {
         margin-right: $formSpacing * 1.5;
 
-        @media (min-height: 640px) and (max-width: $formBreak) {
+        @media (min-height: $formBreakV) and (max-width: $formBreakH) {
           flex-grow: 1;
           margin: 0;
         }
       }
 
-      @media (min-height: 640px) and (max-width: $formBreak) {
+      @media (min-height: $formBreakV) and (max-width: $formBreakH) {
         flex-direction: column;
         width: 100%;
       }
 
-      @media (max-width: $formBreak) {
+      @media (max-width: $formBreakH) {
         margin: 0;
       }
 
       input {
-        @media (max-width: $formBreak) {
+        @media (max-width: $formBreakH) {
           height: 8vh;
         }
 
-        @media (max-height: 640px) {
+        @media (max-height: $formBreakV) {
           height: 10vh;
         }
       }
@@ -149,12 +151,13 @@ $formBreak: 775px;
         color: tomato !important;
       }
 
-      @media (max-width: $formBreak) {
+      @media (max-width: $formBreakH) {
         flex-grow: 1;
+        flex-basis: 1;
         width: 100%;
       }
 
-      @media (max-height: 640px) {
+      @media (max-height: $formBreakV) {
         font-size: 1.75rem;
         padding: 0.5rem 0;
       }
@@ -165,7 +168,7 @@ $formBreak: 775px;
       height: 16rem;
       resize: none;
 
-      @media (max-width: $formBreak) {
+      @media (max-height: $formBreakV) {
         height: auto;
       }
     }
@@ -184,13 +187,13 @@ $formBreak: 775px;
         color: tomato;
       }
 
-      @media (max-width: $formBreak) {
+      @media (max-width: $formBreakH) {
         width: 100%;
         margin-top: 2rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
 
-      @media (max-height: 640px) {
+      @media (max-height: $formBreakV) {
         margin-top: 1.5rem;
       }
     }
