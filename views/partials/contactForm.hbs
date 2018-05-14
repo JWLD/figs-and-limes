@@ -1,28 +1,30 @@
-<div class="contact-form-wrap" id="form-wrap">
+<div class="contact-form-wrap show-form" id="form-wrap">
 	<form class="contact-form" id="contact-form">
-		<button class="close-btn form-toggle">
-			<span class="foo">&#10005;</span>
+		<button class="form-close-btn form-toggle">
+			<span>&#10005;</span>
 		</button>
 
-		<h2 id="form-title">CONTACT</h2>
+		<h2 id="form-title" class="form-title">CONTACT</h2>
 
-		<div>
-			<input name="name" placeholder="Name *" />
-			<input name="date" placeholder="Date" />
+		<div class="form-field-wrap">
+			<div>
+				<input name="name" placeholder="Name *" />
+				<input name="date" placeholder="Date" />
+			</div>
+
+			<div>
+				<input name="type" placeholder="Event Type" />
+				<input name="location" placeholder="Event Location" />
+			</div>
+
+			<div>
+				<input name="email" type="email" placeholder="Email Address *" />
+				<input name="phone" type="number" placeholder="Phone Number" />
+			</div>
+
+			<textarea name="message" placeholder="Your Message" resizable="false"></textarea>
 		</div>
 
-		<div>
-			<input name="type" placeholder="Event Type" />
-			<input name="location" placeholder="Event Location" />
-		</div>
-
-		<div>
-			<input name="email" type="email" placeholder="Email Address *" />
-			<input name="phone" type="number" placeholder="Phone Number" />
-		</div>
-
-		<textarea name="message" placeholder="Your Message" resizable="false"></textarea>
-
-		<button type="submit">SEND</button>
+		<button class="form-submit" type="submit">SEND</button>
 	</form>
 </div>
