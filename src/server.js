@@ -70,16 +70,7 @@ app.post('/contact', (req, res) => {
     from: 'figslimes@gmail.com',
     to: req.body.email,
     subject: 'Figs & Limes Enquiry',
-    text: `
-      Thanks for your enquiry. We'll be in touch shortly!
-
-      - The Figs & Limes team
-
-
-      www.figsandlimes.com
-
-      Wedding and function band agency - ${new Date().getFullYear()}.
-    `
+    text: `Thanks for your enquiry. We'll be in touch shortly!\n- The Figs & Limes team\n\nwww.figsandlimes.com\nWedding and function band agency - ${new Date().getFullYear()}.`
   }
 
   transporter.sendMail(customerMailOptions, function(err, info) {
