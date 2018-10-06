@@ -20,11 +20,12 @@
   },
   "homepage": "https://github.com/JWLD/figs-and-limes#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "dotenv": "^4.0.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "node-sass": "^4.9.0",
-    "nodemailer": "^4.6.4"
+    "express-sslify": "^1.2.0",
+    "node-sass": "^4.9.3",
+    "nodemailer": "^4.6.8"
   }
 }
