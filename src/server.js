@@ -3,9 +3,12 @@ const Handlebars = require('express-handlebars')
 const { bands, faqs } = require('./data.json')
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
+const enforce = require('express-sslify')
 require('dotenv').config()
 
 const app = Express()
+
+app.use(enforce.HTTPS())
 
 app.engine(
   'hbs',
