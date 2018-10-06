@@ -8,7 +8,7 @@ require('dotenv').config()
 
 const app = Express()
 
-app.use(enforce.HTTPS())
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 app.engine(
   'hbs',
