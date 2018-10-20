@@ -3,12 +3,12 @@ const Handlebars = require('express-handlebars')
 const { bands, faqs } = require('./data.json')
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
-const enforce = require('express-sslify')
+// const enforce = require('express-sslify')
 require('dotenv').config()
 
 const app = Express()
 
-app.use(enforce.HTTPS({ trustProtoHeader: true }))
+// app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 app.engine(
   'hbs',
@@ -36,7 +36,7 @@ app.get('/bands/:band', (req, res) => {
 })
 
 app.post('/contact', (req, res) => {
-  if (!process.env.EMAIL_PASSWORD) return console.log('No password!')
+  if (!process.env.YAHOO_PASSWORD) return console.log('No password!')
 
   let emailString = ''
 
@@ -45,19 +45,19 @@ app.post('/contact', (req, res) => {
   })
 
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'yahoo',
     auth: {
-      user: 'figslimes@gmail.com',
-      pass: process.env.EMAIL_PASSWORD
+      user: 'figsandlimes@yahoo.com',
+      pass: process.env.YAHOO_PASSWORD
     }
   })
 
   // send email to figslimes
 
   const figsMailOptions = {
-    from: 'figslimes@gmail.com',
-    to: 'figslimes@gmail.com',
-    subject: 'New Message',
+    from: 'figsandlimes@yahoo.com',
+    to: 'figsandlimes@yahoo.com',
+    subject: 'New Enquiry',
     text: emailString
   }
 
@@ -67,7 +67,7 @@ app.post('/contact', (req, res) => {
     // send email to customer
 
     const customerMailOptions = {
-      from: 'figslimes@gmail.com',
+      from: 'figsandlimes@yahoo.com',
       to: req.body.email,
       subject: 'Figs & Limes Enquiry',
       text: `Thanks for your enquiry. We'll be in touch shortly!\n\n- The Figs & Limes team\n\n\nwww.figsandlimes.com\n\nWedding and function band agency - ${new Date().getFullYear()}.`
