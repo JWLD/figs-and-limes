@@ -27,5 +27,8 @@
     "express-sslify": "^1.2.0",
     "node-sass": "^4.9.3",
     "nodemailer": "^4.6.8"
+  },
+  "engine": {
+    "node": "11.12.0"
   }
 }
